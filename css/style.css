@@ -1,0 +1,491 @@
+@font-face {
+  font-family: 'MazzardM_Regular';
+  src: url('../fonts/MazzardM-Regular.ttf');
+}
+@font-face {
+  font-family: 'MazzardM_Medium';
+  src: url('../fonts/MazzardM-Medium.ttf');
+}
+@font-face {
+  font-family: 'MazzardM_Light';
+  src: url('../fonts/MazzardM-Light.ttf');
+}
+@font-face {
+  font-family: 'MazzardM_Bold';
+  src: url('../fonts/MazzardM-Bold.ttf');
+}
+html {
+  font-size: 10px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+button,
+button:active,
+button:focus {
+  outline: none;
+}
+input,
+input:active,
+input:focus {
+  outline: none;
+}
+textarea,
+textarea:active,
+textarea:focus {
+  outline: none;
+}
+a,
+a:active,
+a:focus {
+  outline: none;
+}
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+.stop {
+  overflow-y: hidden;
+}
+.button {
+  border: none;
+  cursor: pointer;
+  background-color: #f2994a;
+  color: #ffffff;
+  font-family: 'MazzardM_Bold', sans-serif;
+  border-radius: 1.2rem;
+  transition: 0.3s;
+}
+.button:hover {
+  background-color: #381ed4;
+}
+.section-title {
+  text-align: center;
+  font-family: 'MazzardM_Bold', sans-serif;
+  font-size: 2.8rem;
+  color: #242625;
+}
+.home-first_window {
+  padding-top: 8rem;
+  background: url(../img/home/first_window/bg.png) no-repeat center;
+  background-size: cover;
+  padding-bottom: 15rem;
+}
+.home-first_window-span {
+  font-family: 'MazzardM_Medium', sans-serif;
+  color: #959595;
+  font-size: 1.6rem;
+  padding-top: 15rem;
+}
+.home-first_window-title {
+  font-family: 'MazzardM_Bold', sans-serif;
+  color: #242625;
+  font-size: 4rem;
+  padding-top: 2.6rem;
+  margin-bottom: 5rem;
+}
+.home-first_window-paragraph {
+  font-family: 'MazzardM_Medium', sans-serif;
+  font-size: 1.8rem;
+  color: #757575;
+  padding: 0;
+  margin-bottom: 5rem;
+}
+.home-first_window-button {
+  font-size: 1.8rem;
+  padding: 1.6rem 5.6rem;
+}
+.home-services {
+  padding: 11rem 0rem;
+  background-color: #FEFEFE;
+}
+.home-services-link {
+  text-decoration: none;
+}
+.home-services-link:hover {
+  text-decoration: none;
+}
+.home-services-block {
+  text-align: center;
+  padding: 2rem 5rem;
+  border-radius: 1rem;
+  background-color: #D9DFFC;
+  min-height: 17.3rem;
+  transition: 0.3s;
+}
+.home-services-block:hover {
+  text-align: center;
+  background-color: #381ed4;
+}
+.home-services-block:hover .home-services-name {
+  color: #ffffff;
+}
+.home-services-block:hover .home-services-img {
+  display: none;
+}
+.home-services-block:hover .home-services-img_white {
+  display: flex;
+}
+.home-services-img {
+  margin-bottom: 2rem;
+}
+.home-services-img_white {
+  padding-left: 35%;
+  text-align: center;
+  margin-bottom: 2rem;
+  display: none;
+}
+.home-services-name {
+  font-family: 'MazzardM_Regular', sans-serif;
+  font-size: 1.6rem;
+  color: #381ed4;
+  line-height: 1.891rem;
+}
+.home-services-title {
+  margin-bottom: 7rem;
+}
+.home-comfort {
+  padding: 13rem 0rem;
+  background: url(../img/home/comfort/bg.png) no-repeat center;
+  background-size: cover;
+}
+.home-comfort-title {
+  font-family: 'MazzardM_Bold', sans-serif;
+  font-size: 3.6rem;
+  padding-top: 5rem;
+  color: #ffffff;
+  margin-bottom: 5rem;
+}
+.home-comfort-paragraph {
+  font-family: 'MazzardM_Medium', sans-serif;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  margin-bottom: 2.8rem;
+  color: #ffffff;
+}
+.home-comfort-img {
+  text-align: center;
+  width: 100%;
+}
+.pluses {
+  padding: 3rem 0rem;
+}
+.pluses-block {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.07);
+}
+.pluses-img {
+  margin-right: 2.5rem;
+}
+.pluses-name {
+  font-family: 'MazzardM_Regular', sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #381ed4;
+  padding: 0;
+  margin: 0;
+}
+.plans {
+  padding: 6rem 0rem;
+  background: url(../img/plans/bg.png) no-repeat center;
+  background-size: cover;
+}
+.plans-title {
+  font-family: 'MazzardM_Bold', sans-serif;
+  font-size: 2.8rem;
+  margin-bottom: 4rem;
+  color: #242625;
+}
+.plans-paragraph {
+  font-family: 'MazzardM_Regular', sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 3.5rem;
+  color: #242625;
+}
+.plans-block {
+  display: flex;
+  align-items: center;
+  padding: 1.9rem 4rem;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.07);
+  margin-bottom: 2rem;
+}
+.plans-block-form {
+  text-align: center;
+  padding-top: 3rem;
+}
+.plans-block-form-title {
+  font-family: 'MazzardM_Bold', sans-serif;
+  font-size: 2rem;
+  color: #f2994a;
+  margin-bottom: 4rem;
+}
+.plans-block-form-name {
+  font-family: 'MazzardM_Regular', sans-serif;
+  font-size: 1.4rem;
+  color: #f2994a;
+  padding: 0;
+  margin-bottom: 0.6rem;
+  text-align: left;
+}
+.plans-block-form-input {
+  width: 100%;
+  padding: 1.4rem 1.3rem;
+  border-radius: 0.5rem;
+  background-color: #FEFEFE;
+  color: #242625;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  border: none;
+  border: 1px solid #FEFEFE;
+  transition: 0.3s;
+}
+.plans-block-form-input:hover {
+  border: 1px solid #f2994a;
+}
+.plans-block-form-input:focus {
+  border: 1px solid #f2994a;
+}
+.plans-block-form-span {
+  margin: 0;
+}
+.plans-block-form-button {
+  padding: 1.6rem 6rem;
+  font-size: 1.8rem;
+  margin-bottom: 1.3rem;
+}
+.plans-img {
+  margin-right: 4rem;
+}
+.plans-name {
+  font-family: 'MazzardM_Medium', sans-serif;
+  font-size: 1.8rem;
+  color: #242625;
+  margin-bottom: 1rem;
+}
+.plans-sename {
+  font-family: 'MazzardM_Light', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: #242625;
+  padding: 0;
+  margin: 0;
+}
+.plans-form {
+  padding: 4rem 3rem;
+  border-radius: 1rem;
+  background: url(../img/plans/form-bg.png) no-repeat center;
+  background-size: cover;
+}
+option:focus {
+  border: 1px solid #f2994a;
+}
+@media (max-width: 1200px) {
+  .home-first_window {
+    padding-top: 7rem;
+    padding-bottom: 8rem;
+  }
+  .home-first_window-span {
+    padding-top: 7rem;
+    font-size: 1.4rem;
+  }
+  .home-first_window-title {
+    padding-top: 2rem;
+    font-size: 2.8rem;
+    margin-bottom: 3rem;
+  }
+  .home-first_window-paragraph {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+  }
+  .home-first_window-button {
+    font-size: 1.1rem;
+    padding: 0.8rem 3rem;
+    border-radius: 0.8rem;
+  }
+  .home-services-img_white {
+    padding-left: 30%;
+  }
+  .pluses-name {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+}
+@media (max-width: 800px) {
+  .home-first_window-button {
+    font-size: 1rem;
+  }
+  .home-services {
+    padding: 5rem 0rem;
+  }
+  .home-services-title {
+    margin-bottom: 3.6rem;
+  }
+  .home-services-block {
+    padding: 1.5rem 3rem;
+    min-height: 12.9rem;
+  }
+  .home-services-name {
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+  }
+  .home-services-img {
+    margin-bottom: 1rem;
+  }
+  .home-services-img_white {
+    margin-bottom: 1rem;
+    padding-left: 25%;
+  }
+  .home-comfort {
+    padding: 6rem 0rem;
+  }
+  .home-comfort-title {
+    padding-top: 3rem;
+    font-size: 2.4rem;
+    margin-bottom: 4rem;
+  }
+  .home-comfort-paragraph {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .pluses-img {
+    width: 3.5rem;
+    margin-right: 1rem;
+  }
+  .pluses-name {
+    font-size: 0.8rem;
+    line-height: 0.946rem;
+  }
+  .plans {
+    padding: 3.5rem 3rem;
+  }
+  .plans-title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+  .plans-paragraph {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .plans-block {
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+  }
+  .plans-block-form {
+    padding-top: 1.8rem;
+  }
+  .plans-block-form-title {
+    font-size: 1.2rem;
+    margin-bottom: 1.3rem;
+  }
+  .plans-block-form-name {
+    font-size: 0.8rem;
+    margin-bottom: 0.3rem;
+  }
+  .plans-block-form-input {
+    padding: 0.5rem 0.4rem;
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  .plans-block-form-button {
+    padding: 0.9rem 3rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.7rem;
+  }
+  .plans-block-form-span {
+    font-size: 0.6rem;
+    line-height: 0.7rem;
+  }
+  .plans-img {
+    margin-right: 2rem;
+    width: 4.5rem;
+  }
+  .plans-name {
+    font-size: 1rem;
+    margin-bottom: 0.6rem;
+  }
+  .plans-sename {
+    font-size: 0.7rem;
+    line-height: 0.8rem;
+  }
+  .plans-form {
+    padding: 2.5rem 1.7rem;
+  }
+}
+@media (max-width: 450px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+  .home-first_window {
+    padding-bottom: 13rem;
+    background: url(../img/home/first_window/bg_mobile.png) no-repeat right bottom;
+    background-size: cover;
+  }
+  .home-first_window-span {
+    font-size: 1.4rem;
+    padding-top: 4rem;
+  }
+  .home-first_window-title {
+    padding-top: 3.4rem;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+  }
+  .home-first_window-paragraph {
+    margin-bottom: 4rem;
+    font-size: 1.1rem;
+  }
+  .home-first_window-button {
+    font-size: 1rem;
+    padding: 0.9rem 3rem;
+    border-radius: 0.5rem;
+  }
+  .home-services {
+    padding: 4rem 0rem;
+  }
+  .home-services-block {
+    margin-bottom: 1rem;
+    min-height: 0rem;
+    padding: 1rem 2rem;
+  }
+  .home-services-img {
+    width: 3rem;
+  }
+  .home-services-img_white {
+    width: 46%;
+    align-items: center;
+  }
+  .home-comfort {
+    padding: 0rem 0rem;
+  }
+  .home-comfort-img {
+    padding: 2rem 0rem;
+  }
+}
+@media (max-width: 400px) {
+  .home-first_window-span {
+    font-size: 1.2rem;
+    padding-top: 2rem;
+  }
+  .home-first_window-title {
+    padding-top: 2.2rem;
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+  .home-first_window-paragraph {
+    font-size: 0.9rem;
+    margin-bottom: 3rem;
+  }
+  .home-services-block {
+    min-height: 10.2rem;
+  }
+  .pluses-img {
+    width: 3rem;
+  }
+}

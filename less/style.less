@@ -1,0 +1,549 @@
+//Fonts
+@font-face { font-family: 'MazzardM_Regular';
+    src: url('../fonts/MazzardM-Regular.ttf'); }
+@font-face { font-family: 'MazzardM_Medium';
+    src: url('../fonts/MazzardM-Medium.ttf'); } 
+@font-face { font-family: 'MazzardM_Light';
+    src: url('../fonts/MazzardM-Light.ttf'); }
+@font-face { font-family: 'MazzardM_Bold';
+    src: url('../fonts/MazzardM-Bold.ttf'); }            
+
+.mazzreg(){font-family: 'MazzardM_Regular', sans-serif;}
+.mazzmed(){font-family: 'MazzardM_Medium', sans-serif;}
+.mazzlight(){font-family: 'MazzardM_Light', sans-serif;}
+.mazzbold(){font-family: 'MazzardM_Bold', sans-serif;}
+.opensans(){font-family: 'Open Sans', sans-serif;}
+
+
+//Colors
+@light: #fff;
+@osnova: #381ED4;
+@text: #242625;
+@dop: #F2994A;
+@text_gray:#959595;
+@block_gray:#D9DFFC;
+@text_gray_two:#757575;
+
+
+//Basic
+
+html{
+    font-size: 10px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+button, 
+button:active, 
+button:focus {
+    outline: none;
+}
+input,
+input:active,
+input:focus{
+	outline: none;
+}
+textarea,
+textarea:active,
+textarea:focus{
+	outline: none;
+}
+a,
+a:active,
+a:focus{
+	outline: none;
+}
+a:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.stop{
+    overflow-y: hidden;
+}
+.button{
+    border: none;
+    cursor: pointer;
+    background-color: @dop;
+    color: @light;
+    .mazzbold();
+    border-radius: 1.2rem;
+    transition: 0.3s;
+    &:hover{
+        background-color: @osnova;
+    }
+}
+.section{
+    &-title{
+        text-align: center;
+        .mazzbold();
+        font-size: 2.8rem;
+        color: @text;
+    }
+}
+
+//HOME
+.home{
+    &-first_window{
+        padding-top: 8rem;
+        background: url(../img/home/first_window/bg.png) no-repeat center ;
+        background-size: cover;
+        padding-bottom: 15rem;
+        &-span{
+            .mazzmed();
+            color: @text_gray;
+            font-size: 1.6rem;
+            padding-top: 15rem;
+        }
+        &-title{
+            .mazzbold();
+            color: @text;
+            font-size: 4rem;
+            padding-top: 2.6rem;
+            margin-bottom: 5rem;
+        }
+        &-paragraph{
+            .mazzmed();
+            font-size: 1.8rem;
+            color: @text_gray_two;
+            padding: 0;
+            margin-bottom: 5rem;
+        }
+        &-button{
+            font-size: 1.8rem;
+            padding: 1.6rem 5.6rem;
+        }
+    }
+    &-services{
+        padding: 11rem 0rem;
+        background-color: #FEFEFE;
+        &-link{
+            text-decoration: none;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+        &-block{
+            text-align: center;
+            padding: 2rem 5rem;
+            border-radius: 1rem;
+            background-color: #D9DFFC;
+            min-height: 17.3rem;
+            transition: 0.3s;
+            &:hover{
+                text-align: center;
+                background-color: @osnova;
+                .home-services-name{
+                    color: @light;
+                }
+                .home-services-img{
+                    display: none;
+                }
+                .home-services-img_white{
+                    display: flex;
+                }
+            }
+        }
+        &-img{
+            margin-bottom: 2rem;
+            &_white{
+                padding-left: 35%;
+                text-align: center;
+                margin-bottom: 2rem;
+                display: none;
+            }
+        }
+        &-name{
+            .mazzreg();
+            font-size: 1.6rem;
+            color: @osnova;
+            line-height: 1.891rem;
+        }
+        &-title{
+            margin-bottom: 7rem; 
+        }
+    }
+    &-comfort{
+        padding: 13rem 0rem;
+        background: url(../img/home/comfort/bg.png) no-repeat center;
+        background-size: cover;
+        &-title{
+            .mazzbold();
+            font-size: 3.6rem;
+            padding-top: 5rem;
+            color: @light;
+            margin-bottom: 5rem;
+        }
+        &-paragraph{
+            .mazzmed();
+            font-size: 2.4rem;
+            line-height: 2.8rem;
+            margin-bottom: 2.8rem;
+            color: @light;
+        }
+        &-img{
+            text-align: center;
+            width: 100%;
+        }
+    }
+}
+//Pluses
+.pluses{
+    padding: 3rem 0rem;
+    &-block{
+        display: flex;
+        align-items: center;
+        padding: 1.5rem;
+        border-radius: 1rem;
+        box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.07);
+    }
+    &-img{
+        margin-right: 2.5rem;
+    }
+    &-name{
+        .mazzreg();
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+        color: @osnova;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+//Plans
+.plans{
+    padding: 6rem 0rem;
+    background: url(../img/plans/bg.png) no-repeat center;
+    background-size: cover;
+    &-title{
+        .mazzbold();
+        font-size: 2.8rem;
+        margin-bottom: 4rem;
+        color:@text;
+    }
+    &-paragraph{
+        .mazzreg();
+        font-size: 1.8rem;
+        margin-bottom: 3.5rem;
+        color: @text;
+    }
+    &-block{
+        display: flex;
+        align-items: center;
+        padding: 1.9rem 4rem;
+        border-radius: 1rem;
+        box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.07);
+        margin-bottom: 2rem;
+        &-form{
+            text-align: center;
+            padding-top: 3rem;
+            &-title{
+                .mazzbold();
+                font-size: 2rem;
+                color: @dop;
+                margin-bottom: 4rem;
+            }
+            &-name{
+                .mazzreg();
+                font-size: 1.4rem;
+                color: @dop;
+                padding: 0;
+                margin-bottom: 0.6rem;
+                text-align: left;
+            }
+            &-input{
+                width: 100%;
+                padding: 1.4rem 1.3rem;
+                border-radius: 0.5rem;
+                background-color: #FEFEFE;
+                color: @text;
+                font-size: 1.4rem;
+                margin-bottom: 2rem;
+                border: none;
+                border: 1px solid #FEFEFE;
+                transition: 0.3s;
+                &:hover{
+                    border: 1px solid @dop;
+                }
+                &:focus{
+                    border: 1px solid @dop;
+                }
+            }
+            &-span{
+                margin: 0;
+            }
+            &-button{
+                padding: 1.6rem 6rem;
+                font-size: 1.8rem;
+                margin-bottom: 1.3rem;
+            }
+        }
+    }
+    &-img{
+        margin-right: 4rem;
+    }
+    &-name{
+        .mazzmed();
+        font-size: 1.8rem;
+        color: @text;
+        margin-bottom: 1rem;
+    }
+    &-sename{
+        .mazzlight();
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        color: @text;
+        padding: 0;
+        margin: 0;
+    }
+    &-form{
+        padding: 4rem 3rem;
+        border-radius: 1rem;
+        background: url(../img/plans/form-bg.png) no-repeat center;
+        background-size: cover;
+    }
+}
+option{
+    &:focus{
+        border: 1px solid @dop;
+    }
+}
+//Media
+@media(max-width: 1200px){
+    .home{
+        &-first_window{
+            padding-top: 7rem;
+            padding-bottom: 8rem;
+            &-span{
+                padding-top: 7rem;
+                font-size: 1.4rem;
+            }
+            &-title{
+                padding-top: 2rem;
+                font-size: 2.8rem;
+                margin-bottom: 3rem;
+            }
+            &-paragraph{
+                font-size: 1.2rem;
+                margin-bottom: 3rem;
+            }
+            &-button{
+                font-size: 1.1rem;
+                padding: 0.8rem 3rem;
+                border-radius: 0.8rem;
+            }
+        }
+        &-services{
+            &-img{
+                &_white{
+                    padding-left: 30%;
+                }
+            }
+        }
+    }
+    .pluses{
+        &-name{
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+        }
+    }
+}
+@media(max-width: 800px){
+    .home{
+        &-first_window{
+            &-button{
+                font-size: 1rem;
+            }
+        }
+        &-services{
+            padding: 5rem 0rem;
+            &-title{
+                margin-bottom: 3.6rem;
+            }
+            &-block{
+                padding: 1.5rem 3rem;
+                min-height: 12.9rem;
+            }
+            &-name{
+                font-size: 0.9rem;
+                line-height: 1.1rem;
+            }
+            &-img{
+                margin-bottom: 1rem;
+                &_white{
+                    margin-bottom: 1rem;
+                    padding-left: 25%; 
+                }
+            }
+        }
+        &-comfort{
+            padding: 6rem 0rem;
+            &-title{
+                padding-top: 3rem;
+                font-size: 2.4rem;
+                margin-bottom: 4rem;
+            }
+            &-paragraph{
+                font-size: 1.3rem;
+                line-height: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+    .pluses{
+        &-img{
+            width: 3.5rem;
+            margin-right: 1rem;
+        }
+        &-name{
+            font-size: 0.8rem;
+            line-height: 0.946rem;
+        }
+    }
+    .plans{
+        padding: 3.5rem 3rem;
+        &-title{
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+        }
+        &-paragraph{
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        &-block{
+            padding: 1rem 2rem;
+            margin-bottom: 1rem;
+            &-form{
+                padding-top: 1.8rem;
+                &-title{
+                    font-size: 1.2rem;
+                    margin-bottom: 1.3rem;
+                }
+                &-name{
+                    font-size: 0.8rem;
+                    margin-bottom: 0.3rem;
+                }
+                &-input{
+                    padding: 0.5rem 0.4rem;
+                    border-radius: 0.5rem;
+                    font-size: 0.8rem;
+                    margin-bottom: 1rem;
+                }
+                &-button{
+                    padding: 0.9rem 3rem;
+                    font-size: 1rem;
+                    border-radius: 0.5rem;
+                    margin-bottom: 0.7rem;
+                }
+                &-span{
+                    font-size: 0.6rem;
+                    line-height: 0.7rem;
+                }
+            }
+        }
+        &-img{
+            margin-right: 2rem;
+            width: 4.5rem;
+        }
+        &-name{
+            font-size: 1rem;
+            margin-bottom: 0.6rem;
+        }
+        &-sename{
+            font-size: 0.7rem;
+            line-height: 0.8rem;
+        }
+        &-form{
+            padding: 2.5rem 1.7rem;
+        }
+    }
+}
+@media(max-width: 450px){
+    .section{
+        &-title{
+            font-size: 1.8rem;
+        }
+    }
+    .home{
+        &-first_window{
+            padding-bottom: 13rem;
+            background: url(../img/home/first_window/bg_mobile.png) no-repeat right bottom;
+            background-size: cover;
+            &-span{
+                font-size: 1.4rem;
+                padding-top: 4rem;
+            }
+            &-title{
+                padding-top: 3.4rem;
+                font-size: 2rem;
+                margin-bottom: 2.5rem;
+            }
+            &-paragraph{
+                margin-bottom: 4rem;
+                font-size: 1.1rem;
+            }
+            &-button{
+                font-size: 1rem;
+                padding: 0.9rem 3rem;
+                border-radius: 0.5rem;
+            }
+        }
+        &-services{
+            padding: 4rem 0rem;
+            &-block{
+                margin-bottom: 1rem;
+                min-height: 0rem;
+                padding: 1rem 2rem;
+            }
+            &-img{
+                width: 3rem;
+                &_white{
+                    width: 46%;
+                   align-items: center;
+                }
+            }
+        }
+        &-comfort{
+            padding: 0rem 0rem;
+            &-img{
+                padding: 2rem 0rem;
+            }
+        }
+    }
+
+}
+@media(max-width: 400px){
+    .home{
+        &-first_window{
+            &-span{
+                font-size: 1.2rem;
+                padding-top: 2rem;
+            }
+            &-title{
+                padding-top: 2.2rem;
+                font-size: 1.6rem;
+                margin-bottom: 1.5rem;
+            }
+            &-paragraph{
+                font-size: 0.9rem;
+                margin-bottom: 3rem;
+            }
+        }
+        &-services{
+            &-block{
+                min-height: 10.2rem;
+            }
+        }
+    }
+    .pluses{
+        &-img{
+            width: 3rem;
+        }
+        &-name{
+
+        }
+    }
+
+}
