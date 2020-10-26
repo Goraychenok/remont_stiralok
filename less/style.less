@@ -354,7 +354,7 @@ option{
     .home{
         &-first_window{
             &-button{
-                font-size: 1rem;
+                font-size: 1.8rem;
             }
         }
         &-services{
@@ -367,8 +367,9 @@ option{
                 min-height: 12.9rem;
             }
             &-name{
-                font-size: 0.9rem;
-                line-height: 1.1rem;
+                font-size: 1.4rem;
+                line-height: 1.5rem;
+                margin-bottom: 0;
             }
             &-img{
                 margin-bottom: 1rem;
@@ -398,18 +399,22 @@ option{
             margin-right: 1rem;
         }
         &-name{
-            font-size: 0.8rem;
-            line-height: 0.946rem;
+            font-size: 1.2rem;
+            line-height: 1.3rem;
+        }
+        &-block{
+            padding: 0.5rem;
+            min-height: 6rem;
         }
     }
     .plans{
         padding: 3.5rem 3rem;
         &-title{
-            font-size: 1.8rem;
+            font-size: 2.2rem;
             margin-bottom: 2rem;
         }
         &-paragraph{
-            font-size: 1rem;
+            font-size: 1.5rem;
             margin-bottom: 1.5rem;
         }
         &-block{
@@ -418,28 +423,28 @@ option{
             &-form{
                 padding-top: 1.8rem;
                 &-title{
-                    font-size: 1.2rem;
+                    font-size: 1.5rem;
                     margin-bottom: 1.3rem;
                 }
                 &-name{
-                    font-size: 0.8rem;
+                    font-size: 1.4rem;
                     margin-bottom: 0.3rem;
                 }
                 &-input{
                     padding: 0.5rem 0.4rem;
                     border-radius: 0.5rem;
-                    font-size: 0.8rem;
+                    font-size: 1.2rem;
                     margin-bottom: 1rem;
                 }
                 &-button{
                     padding: 0.9rem 3rem;
-                    font-size: 1rem;
+                    font-size: 1.3rem;
                     border-radius: 0.5rem;
                     margin-bottom: 0.7rem;
                 }
                 &-span{
-                    font-size: 0.6rem;
-                    line-height: 0.7rem;
+                    font-size: 0.9rem;
+                    line-height: 1.1rem;
                 }
             }
         }
@@ -448,12 +453,12 @@ option{
             width: 4.5rem;
         }
         &-name{
-            font-size: 1rem;
+            font-size: 1.5rem;
             margin-bottom: 0.6rem;
         }
         &-sename{
-            font-size: 0.7rem;
-            line-height: 0.8rem;
+            font-size: 1.2rem;
+            line-height: 1.3rem;
         }
         &-form{
             padding: 2.5rem 1.7rem;
@@ -463,7 +468,7 @@ option{
 @media(max-width: 450px){
     .section{
         &-title{
-            font-size: 1.8rem;
+            font-size: 2.2rem;
         }
     }
     .home{
@@ -472,21 +477,21 @@ option{
             background: url(../img/home/first_window/bg_mobile.png) no-repeat right bottom;
             background-size: cover;
             &-span{
-                font-size: 1.4rem;
+                font-size: 1.8rem;
                 padding-top: 4rem;
             }
             &-title{
                 padding-top: 3.4rem;
-                font-size: 2rem;
+                font-size: 2.5rem;
                 margin-bottom: 2.5rem;
             }
             &-paragraph{
                 margin-bottom: 4rem;
-                font-size: 1.1rem;
+                font-size: 1.5rem;
             }
             &-button{
-                font-size: 1rem;
-                padding: 0.9rem 3rem;
+                font-size: 1.8rem;
+                padding: 0.9rem 4rem;
                 border-radius: 0.5rem;
             }
         }
@@ -498,11 +503,12 @@ option{
                 padding: 1rem 2rem;
             }
             &-img{
-                width: 3rem;
                 &_white{
-                    width: 46%;
-                   align-items: center;
+                    padding-left: 43%;
                 }
+            }
+            &-name{
+                font-size: 1.8rem;
             }
         }
         &-comfort{
@@ -510,6 +516,15 @@ option{
             &-img{
                 padding: 2rem 0rem;
             }
+            &-paragraph{
+                font-size: 1.5rem;
+                line-height: 1.7rem;
+            }
+        }
+    }
+    .pluses{
+        &-block{
+            margin-bottom: 2rem;
         }
     }
 
@@ -518,16 +533,16 @@ option{
     .home{
         &-first_window{
             &-span{
-                font-size: 1.2rem;
+                font-size: 1.4rem;
                 padding-top: 2rem;
             }
             &-title{
                 padding-top: 2.2rem;
-                font-size: 1.6rem;
+                font-size: 2.2rem;
                 margin-bottom: 1.5rem;
             }
             &-paragraph{
-                font-size: 0.9rem;
+                font-size: 1.2rem;
                 margin-bottom: 3rem;
             }
         }
@@ -536,6 +551,7 @@ option{
                 min-height: 10.2rem;
             }
         }
+
     }
     .pluses{
         &-img{
@@ -543,6 +559,44 @@ option{
         }
         &-name{
 
+        }
+    }
+    .plans{
+        &-title{
+            font-size: 2rem;
+        }
+        &-paragraph{
+            font-size: 1.3rem;
+        }
+        &-name{
+            font-size: 1.6rem;
+        }
+        &-sename{
+            font-size: 1.4rem;
+            line-height: 1.5rem;
+        }
+        &-block{
+            padding: 1rem 0.5rem;
+            &-form{
+                &-title{
+                    font-size: 1.7rem;
+                    margin-bottom: 3rem;
+                }
+                &-name{
+                    font-size: 1.5rem;
+                }
+                &-input{
+                    padding: 0.8rem 0.7rem;
+                    font-size: 1.4rem;
+                    margin-bottom: 2rem;
+                }
+                &-button{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        &-img{
+            margin-right: 1rem;
         }
     }
 
