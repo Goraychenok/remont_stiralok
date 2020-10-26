@@ -284,6 +284,154 @@ a:hover {
 option:focus {
   border: 1px solid #f2994a;
 }
+.rewiews {
+  padding: 10rem 0rem 6rem 0rem;
+  background-color: #fefefe;
+}
+.rewiews-title {
+  padding: 0;
+  margin-bottom: 4rem;
+}
+.rewiews-block {
+  padding: 5rem 3rem;
+  border-radius: 1rem;
+  background: #ffffff;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.05);
+  filter: drop-shadow(0px 0px 16px rgba(0, 0, 0, 0.05));
+}
+.rewiews-name {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #242625;
+  margin-bottom: 4rem;
+}
+.rewiews-paragraph {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  color: #242625;
+  padding: 0;
+  margin: 0;
+}
+.rewiews-sename {
+  text-align: center;
+  font-family: 'MazzardM_Light', sans-serif;
+  font-size: 1rem;
+  color: #242625;
+  padding-top: 1.5rem;
+  margin-bottom: 0;
+}
+.swiper-wrapper {
+  padding: 2rem 0rem;
+}
+.swiper-pagination {
+  display: none;
+}
+.contacts {
+  background-color: #FEFEFE;
+  padding: 7rem 0rem;
+}
+.contacts-block {
+  padding-top: 9rem;
+}
+.contacts-block-two {
+  padding-left: 3rem;
+}
+.contacts-link {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+  text-decoration: none;
+  transition: 0.3s;
+  color: #242625;
+}
+.contacts-link:hover {
+  text-decoration: underline;
+  color: #242625;
+}
+.contacts-img {
+  margin-right: 2.5rem;
+  width: 5rem;
+}
+.contacts-name {
+  font-family: 'MazzardM_Light', sans-serif;
+  font-size: 1.8rem;
+  color: #242625;
+  margin: 0;
+}
+.contacts-bg {
+  text-align: center;
+  width: 100%;
+  padding-top: 2rem;
+}
+.footer-st {
+  background-color: #381ed4;
+}
+.footer-first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 0rem;
+}
+.footer-linked {
+  display: flex;
+  align-items: center;
+}
+.footer-linked-first {
+  display: none;
+}
+.footer-link {
+  display: flex;
+  align-items: center;
+  margin-right: 1.7rem;
+  color: #ffffff;
+  transition: 0.3s;
+}
+.footer-link:hover {
+  text-decoration: underline;
+}
+.footer-link-two {
+  margin-right: 3rem;
+}
+.footer-img {
+  width: 3rem;
+}
+.footer-paragraph {
+  margin: 0;
+  padding-left: 1.4rem;
+  color: #ffffff;
+  font-family: 'MazzardM_Regular', sans-serif;
+  font-size: 1.4rem;
+}
+.footer-paragraph:hover {
+  text-decoration: underline;
+}
+.footer-twice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-twice-paragraph {
+  margin: 0;
+  padding: 0;
+  color: #DEDEDE;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+.footer-twice-paragraph-two {
+  color: #DEDEDE;
+}
+.footer-twice-paragraph-two:hover {
+  text-decoration: underline;
+  color: #DEDEDE;
+}
+.footer-es {
+  background-color: #351EC0;
+  padding: 0.8rem 0rem;
+}
 @media (max-width: 1200px) {
   .home-first_window {
     padding-top: 7rem;
@@ -313,6 +461,19 @@ option:focus {
   .pluses-name {
     font-size: 1.2rem;
     line-height: 1.5rem;
+  }
+  .contacts-img {
+    width: 3rem;
+    margin-right: 1rem;
+  }
+  .contacts-name {
+    font-size: 1.4rem;
+  }
+  .contacts-link {
+    margin-bottom: 1.5rem;
+  }
+  .contacts-bg {
+    width: 80%;
   }
 }
 @media (max-width: 800px) {
@@ -423,6 +584,30 @@ option:focus {
   .plans-form {
     padding: 2.5rem 1.7rem;
   }
+  .rewiews-block {
+    margin-bottom: 2rem;
+  }
+  .rewiews-sename {
+    font-size: 1.3rem;
+  }
+  .swiper-pagination {
+    display: block;
+  }
+  .swiper-button-prev {
+    display: none;
+  }
+  .swiper-button-next {
+    display: none;
+  }
+  .contacts {
+    padding: 4rem 0rem;
+  }
+  .contacts-name {
+    font-size: 1rem;
+  }
+  .contacts-bg {
+    padding-top: 4rem;
+  }
 }
 @media (max-width: 450px) {
   .section-title {
@@ -477,6 +662,52 @@ option:focus {
   }
   .pluses-block {
     margin-bottom: 2rem;
+  }
+  .rewiews {
+    padding: 3rem 2rem;
+  }
+  .rewiews-title {
+    margin-bottom: 3rem;
+  }
+  .rewiews-block {
+    padding: 3rem 1rem;
+  }
+  .rewiews-name {
+    margin-bottom: 2rem;
+  }
+  .contacts {
+    padding: 2rem 0rem;
+  }
+  .contacts-block {
+    padding-top: 3rem;
+  }
+  .contacts-block-two {
+    padding-left: 0;
+    padding-top: 2rem;
+  }
+  .contacts-bg {
+    padding-left: 10%;
+    padding-top: 1rem;
+  }
+  .contacts-name {
+    font-size: 1.4rem;
+  }
+  .footer-linked {
+    display: none;
+  }
+  .footer-linked-first {
+    display: block;
+  }
+  .footer-linked-twice {
+    display: flex;
+    align-items: center;
+    padding-left: 20%;
+  }
+  .footer-link {
+    margin-bottom: 1rem;
+  }
+  .footer-link-two {
+    margin-right: 0;
   }
 }
 @media (max-width: 400px) {

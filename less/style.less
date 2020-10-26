@@ -310,6 +310,161 @@ option{
         border: 1px solid @dop;
     }
 }
+//rewiews
+.rewiews{
+    padding: 10rem 0rem 6rem 0rem;
+    background-color: #fefefe;
+    &-title{
+        padding: 0;
+        margin-bottom: 4rem;
+    }
+    &-block{
+        padding: 5rem 3rem;
+        border-radius:1rem;
+        background: #ffffff;
+        box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.05);
+        filter: drop-shadow(0px 0px 16px rgba(0, 0, 0, 0.05));
+    }
+    &-name{
+        .opensans();
+        font-weight: 600;
+        color: @text;
+        margin-bottom: 4rem;
+    }
+    &-paragraph{
+        .opensans();
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+        color: @text;
+        padding: 0;
+        margin: 0;
+    }
+    &-sename{
+        text-align: center;
+        .mazzlight();
+        font-size: 1rem;
+        color: @text;
+        padding-top: 1.5rem;
+        margin-bottom: 0;
+    }
+}
+.swiper{
+    &-wrapper{
+        padding: 2rem 0rem;
+    }
+    &-pagination{
+        display: none;
+    }
+}
+//Contacts
+.contacts{
+    background-color: #FEFEFE;
+    padding: 7rem 0rem;
+    &-block{
+        padding-top: 9rem;
+        &-two{
+            padding-left: 3rem;
+        }
+    }
+    &-link{
+        display: flex;
+        align-items: center;
+        margin-bottom: 3rem;
+        text-decoration: none;
+        transition: 0.3s;
+        color: @text;
+        &:hover{
+            text-decoration: underline;
+            color: @text;
+        }
+    }
+    &-img{
+        margin-right: 2.5rem;
+        width: 5rem;
+    }
+    &-name{
+        .mazzlight();
+        font-size: 1.8rem;
+        color: @text;
+        margin: 0;
+    }
+    &-bg{
+        text-align: center;
+        width: 100%;
+        padding-top: 2rem;
+    }
+}
+//Footer
+.footer{
+    &-st{
+        background-color: @osnova;
+    }
+    &-first{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.8rem 0rem;
+    }
+    &-linked{
+        display: flex;
+        align-items: center;
+        &-first{
+            display: none;
+        }
+    }
+    &-link{
+        display: flex;
+        align-items: center;
+        margin-right: 1.7rem;
+        color:@light;
+        transition: 0.3s;
+        &:hover{
+            text-decoration: underline;
+        }
+        &-two{
+            margin-right: 3rem;
+        }
+    }
+    &-img{
+        width: 3rem;
+    }
+    &-paragraph{
+        margin: 0;
+        padding-left: 1.4rem;
+        color: @light;
+        .mazzreg();
+        font-size: 1.4rem;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    &-twice{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-paragraph{
+            margin: 0;
+            padding: 0;
+            color: #DEDEDE;
+            .opensans();
+            font-weight: 400;
+            font-size: 1.4rem;
+            text-decoration: none;
+            &-two{
+                color: #DEDEDE;
+                &:hover{
+                    text-decoration: underline;
+                    color: #DEDEDE;
+                }
+            }
+        }
+    }
+    &-es{
+        background-color: #351EC0;
+        padding: 0.8rem 0rem;
+    }
+}
 //Media
 @media(max-width: 1200px){
     .home{
@@ -347,6 +502,21 @@ option{
         &-name{
             font-size: 1.2rem;
             line-height: 1.5rem;
+        }
+    }
+    .contacts{
+        &-img{
+            width: 3rem;
+            margin-right: 1rem;
+        }
+        &-name{
+            font-size: 1.4rem;
+        }
+        &-link{
+            margin-bottom: 1.5rem;
+        }
+        &-bg{
+            width: 80%;
         }
     }
 }
@@ -464,6 +634,36 @@ option{
             padding: 2.5rem 1.7rem;
         }
     }
+    .rewiews{
+        &-block{
+            margin-bottom: 2rem;
+        }
+        &-sename{
+            font-size: 1.3rem;
+        }
+    }
+    .swiper{
+        &-pagination{
+            display: block;
+        }
+        &-button{
+            &-prev{
+                display: none;
+            }
+            &-next{
+                display: none;
+            }
+        }
+    }
+    .contacts{
+        padding: 4rem 0rem;
+        &-name{
+            font-size: 1rem;
+        }
+        &-bg{
+            padding-top: 4rem;
+        }
+    }
 }
 @media(max-width: 450px){
     .section{
@@ -525,6 +725,54 @@ option{
     .pluses{
         &-block{
             margin-bottom: 2rem;
+        }
+    }
+    .rewiews{
+        padding: 3rem 2rem;
+        &-title{
+            margin-bottom: 3rem;
+        }
+        &-block{
+            padding: 3rem 1rem;
+        }
+        &-name{
+            margin-bottom: 2rem;
+        }
+    }
+    .contacts{
+        padding: 2rem 0rem;
+        &-block{
+            padding-top: 3rem;
+            &-two{
+                padding-left: 0;
+                padding-top: 2rem;
+            }
+        }
+        &-bg{
+            padding-left: 10%;
+            padding-top: 1rem;
+        }
+        &-name{
+            font-size: 1.4rem;
+        }
+    }
+    .footer{
+        &-linked{
+            display: none;
+            &-first{
+                display: block;
+            }
+            &-twice{
+                display: flex;
+                align-items: center;
+                padding-left: 20%;
+            }
+        }
+        &-link{
+            margin-bottom: 1rem;
+            &-two{
+                margin-right: 0;
+            }
         }
     }
 
