@@ -10,3 +10,26 @@ var swiper = new Swiper('.swiper-container', {
       prevEl: '.swiper-button-prev',
     },
   });
+
+  jQuery(document).ready(function() {
+	$('.header__burger').click(function(event) {
+		$('.header__burger,.header__menu').toggleClass('active');
+        $('body').toggleClass('lock');
+        $('.header').addClass('active');
+    });
+    $('.popup').fadeIn();
+});
+function slowScroll(id){
+	var offset = 25;
+	$('html,body').animate ({
+		scrollTop: $(id).offset ().top - offset
+	},1000);
+	$('body').removeClass('lock');
+	$('.header__burger,.header__menu').removeClass('active');
+	return false;
+}
+
+
+
+
+

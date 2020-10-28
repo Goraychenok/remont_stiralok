@@ -7,12 +7,40 @@
     <link rel="stylesheet" href="./css/swiper.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="img/logo.png">
     
     <title>Будет сделано</title>
 </head>
 <body>
     <header class="header">
-
+        <div class="container">
+            <div class="header__body">
+                <a href="./index.html"  class="header__logo">
+                    <img src="img/logo.png" alt="">
+                </a>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <nav class="header__menu">
+                    <ul class="header__list">
+                        <li><a href="/index.html"   class="header__link">Главная</a></li>
+                        <li><a href="javascript://0"  onclick="slowScroll('#services')" class="header__link">Услуги</a></li>
+                        <li><a href="javascript://0"  onclick="slowScroll('#about')" class="header__link">О нас</a></li>
+                        <li><a href="javascript://0"  onclick="slowScroll('#rewiews')"   class="header__link">Отзывы</a></li>
+                        <li><a href="https://vk.com/budetsdel" class="header-link"><img src="./img/header/vk.png" alt="" class="header-link-img-two"></a></li>
+                        <li><a href="tg://resolve?domain=@budetsdel" class="header-link"><img src="./img/header/telega.png" alt="" class="header-link-img-two"></a></li>
+                        <li><a href="https://wa.me/+73452539850" class="header-link"><img src="./img/header/whatsup.png" alt="" class="header-link-img-two"></a></li>
+                        <li><a href="tel:8(982)921-24-41" class="header-link"><img src="./img/header/phone.png" alt="" class="header-link-img"><p class="header-link-span">8(929)269-59-94</p></a></li>
+                        <li><a href="tel:8(912)977-77-61" class="header-link"><img src="./img/header/phone.png" alt="" class="header-link-img"><p class="header-link-span">8(912)977-77-61</p></a></li>
+                        <li class="header-link"><a href="https://vk.com/budetsdel" class="header-link header-link-mobile"><img src="./img/header/vk.png" alt="" class="header-link-img"></a>
+                            <a href="tg://resolve?domain=@budetsdel" class="header-link header-link-mobile"><img src="./img/header/telega.png" alt="" class="header-link-img"></a>
+                            <a href="https://wa.me/+73452539850" class="header-link header-link-mobile"><img src="./img/header/whatsup.png" alt="" class="header-link-img"></a></li>
+                    </ul>
+                </nav>
+                
+                <button class="button header__button popup-btn">Вызвать мастера</button>
+            </div>
+        </div>
     </header>
 
     <section class="home-first_window section">
@@ -23,7 +51,7 @@
                 <h1 class="home-first_window-title">Решим любую проблему с вашей техникой в день обращения</h1>
                 <p class="home-first_window-paragraph">Вернём Вам привычный комфорт и распорядок дня. Быстро устраним любые неисправности и поломки на дому или в офисе.</p>
                 <div class="button-block">
-                    <button class="button home-first_window-button">Вызвать мастера</button>
+                    <button class="button home-first_window-button popup-btn">Вызвать мастера</button>
                 </div>
                </div>
             </div>
@@ -64,7 +92,7 @@
         </div>
     </section>
 
-    <section class="section home-services">
+    <section class="section home-services" id="services">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -172,7 +200,7 @@
         </div>
     </section>
 
-    <section class="home-comfort">
+    <section class="home-comfort" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-7 col-md-7">
@@ -190,7 +218,7 @@
         </div>
     </section>
 
-    <section class="section rewiews">
+    <section class="section rewiews" id="rewiews">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -256,7 +284,7 @@
                             <img src="./img/contacts/mail.png" alt="" class="contacts-img">
                             <p class="contacts-name">Budetsdel@gmail.com</p>
                         </a>
-                        <a href="#" class="contacts-link">
+                        <a href="https://vk.com/budetsdel" class="contacts-link">
                             <img src="./img/contacts/vk.png" alt="" class="contacts-img">
                             <p class="contacts-name">BudetSdel</p>
                         </a>
@@ -276,7 +304,7 @@
                             <img src="./img/contacts/whatsup.png" alt="" class="contacts-img">
                             <p class="contacts-name">8(3452)53-98-50</p>
                         </a>
-                        <a href="tg://resolve?domain=nikname" class="contacts-link">
+                        <a href="tg://resolve?domain=@budetsdel" class="contacts-link">
                             <img src="./img/contacts/telega.png" alt="" class="contacts-img">
                             <p class="contacts-name">8(3452)53-98-50</p>
                         </a>
@@ -299,10 +327,10 @@
                 <div class="footer-first">
                     <img src="./img/footer/logo.png" alt="" class="footer-logo">
                     <div class="footer-linked">
-                        <a href="#" class="footer-link">
+                        <a href="https://vk.com/budetsdel" class="footer-link">
                             <img src="./img/footer/vk.png" alt="" class="footer-img">
                         </a>
-                        <a href="tg://resolve?domain=nikname" class="footer-link">
+                        <a href="tg://resolve?domain=@budetsdel" class="footer-link">
                         <img src="./img/footer/telega.png" alt="" class="footer-img"></a>
                         <a href="https://wa.me/+73452539850" class="footer-link">
                         <img src="./img/footer/whatsup.png" alt="" class="footer-img"></a>
@@ -325,10 +353,10 @@
                             <p class="footer-paragraph">8 (912) 977-77-61</p>
                         </a>
                         <div class="footer-linked-twice">
-                            <a href="#" class="footer-link">
+                            <a href="https://vk.com/budetsdel" class="footer-link">
                                 <img src="./img/footer/vk.png" alt="" class="footer-img">
                             </a>
-                            <a href="tg://resolve?domain=nikname" class="footer-link">
+                            <a href="tg://resolve?domain=@budetsdel" class="footer-link">
                             <img src="./img/footer/telega.png" alt="" class="footer-img"></a>
                             <a href="https://wa.me/+73452539850" class="footer-link">
                             <img src="./img/footer/whatsup.png" alt="" class="footer-img"></a>
@@ -348,9 +376,59 @@
         </section>
     </footer>
 
+
+    <div class="popup">
+        <div class="popup-dialog" id="popup-dialog">
+          <div class="popup-content form-block ">
+            <button class="popup-close">&#215;</button>
+            <div class="popup-form">
+              <h3 class="popup-title ">Получите скидку 20%</h3>
+              <form action="mailer/smart.php" class="form" method="POST" id="form"> 
+                    <p class="popup-name">Ваше имя (как к вам обращаться):</p> 
+                  <input type="text" required  placeholder="Екатерина" class="form-input" name="user_name" >
+                  <p class="popup-name">Номер телефона:</p> 
+                  <input type="text" name="user_summ" placeholder="+7(956)595-99-88" required  class="form-input">
+                  
+                    
+                    <div class="popup-block">
+                        <button type="submit" class="button popup-button " name="submit" value="Готово">Оправить</button>
+                        <p class="popup-paragraph"> *Нажимая на кнопку «Вызвать мастера», Вы даёте своё согласие на обработку персональных данных.</p>
+                    </div>
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal">
+        <div class="modal-dialog" id="modal-dialog">
+          <div class="modal-content form-block ">
+            <button class="modal-close">&#215;</button>
+            <div class="modal-form">
+              <h3 class="modal-title ">Вызовите мастера
+                прямо сейчас или
+                к удобному времени</h3>
+              <form action="mailer/smart.php" class="form" method="POST" id="form"> 
+                    <p class="modal-name">Ваше имя (как к вам обращаться):</p> 
+                  <input type="text" required  placeholder="Екатерина" class="form-input" name="user_name" >
+                  <p class="modal-name">Номер телефона:</p> 
+                  <input type="text" name="user_summ" placeholder="+7(956)595-99-88" required  class="form-input">
+                  
+                    
+                    <div class="modal-block">
+                        <button type="submit" class="button modal-button " name="submit" value="Готово">Оправить</button>
+                        <p class="modal-paragraph"> *Нажимая на кнопку «Вызвать мастера», Вы даёте своё согласие на обработку персональных данных.</p>
+                    </div>
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
     <script src="./js/jquery-3.0.0.min.js"></script>
     <script src="./js/swiper.min.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/popup.js"></script>
 
 </body>
 </html>
