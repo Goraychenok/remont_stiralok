@@ -17,7 +17,8 @@ var swiper = new Swiper('.swiper-container', {
         $('body').toggleClass('lock');
         $('.header').addClass('active');
     });
-    $('.popup').fadeIn();
+    
+    $('.popup').delay(5000).fadeIn();
 });
 function slowScroll(id){
 	var offset = 25;
@@ -28,6 +29,13 @@ function slowScroll(id){
 	$('.header__burger,.header__menu').removeClass('active');
 	return false;
 }
+
+//phone mask
+jQuery(function($){
+  $("#phone").mask("+7 (999) 999-99-99");
+  $("#phone-mask").mask("+7 (999) 999-99-99");
+  $("#phone-mask-two").mask("+7 (999) 999-99-99");
+});
 
 
 

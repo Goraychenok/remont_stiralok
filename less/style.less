@@ -82,6 +82,14 @@ a:hover{
         font-size: 2.8rem;
         color: @text;
     }
+    &-paragraph{
+        padding-top: 4rem;
+        text-align: center;
+        .mazzreg();
+        color: @text;
+        font-size: 1.8rem;
+        margin-bottom: 20rem;
+    }
 }
 //header
 .header{
@@ -284,6 +292,15 @@ a:hover{
             text-align: center;
             width: 100%;
         }
+    }
+}
+//washer
+.washer{
+    &-first_window{
+        padding-top: 16rem;
+        background: url(../img/washer/first-window/bg.png) no-repeat center ;
+        background-size: cover;
+        padding-bottom: 15rem;
     }
 }
 //Pluses
@@ -562,7 +579,67 @@ option{
         padding: 0.8rem 0rem;
     }
 }
+//Problems
+.problems{
+    padding: 10rem 0rem;
+    &-block{
+        padding: 2rem 3rem;
+        border-radius: 1rem;
+        background-color: @block_gray;
+        margin-bottom: 2.5rem;
+        &-two{
+            padding-top: 20%;
+            padding-left: 5%;
+        }
 
+    }
+    &-bloking{
+        display: flex;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+    &-img{
+        width: 4rem;
+        margin-right: 2rem;
+        &-two{
+            margin-bottom: 3rem;
+        }
+    }
+    &-name{
+        .mazzbold();
+        color: @osnova;
+        font-size: 2rem;
+    }
+    &-paragraph{
+        .mazzreg();
+        color: @osnova;
+        font-size: 1.6rem;
+        line-height: 169.7%;
+        &-two{
+            line-height: 142.2%;
+        }
+    }
+    &-button{
+        margin-top: 3rem;
+        width: 100%;
+        padding: 1.8rem 7rem;
+        background-color: @osnova;
+        cursor: pointer;
+        color: @light;
+        .mazzbold();
+        font-size: 1.4rem;
+        &:hover{
+            background-color: @dop;
+        }
+    }
+    &-sename{
+        .mazzreg();
+        color: @text;
+        font-size: 1.7rem;
+        line-height: 2rem;
+        margin: 0;
+    }
+}
 //Popup
 .none{
     display: none;
@@ -855,6 +932,12 @@ option{
     .header__button{
         display: none;
     }
+    .washer{
+        &-first_window{
+            padding-top: 12rem;
+            padding-bottom: 18rem;
+        }
+    }
 
     .home{
         &-first_window{
@@ -946,6 +1029,17 @@ option{
         &-input{
             margin-bottom: 1rem;
             padding: 0.5rem;
+        }
+    }
+    .problems{
+        &-paragraph{
+            font-size: 1.2rem;
+        }
+        &-button{
+            padding: 1.8rem 3rem;
+        }
+        &-name{
+            font-size: 1.8rem;
         }
     }
 }
@@ -1104,11 +1198,56 @@ option{
                 width: 60%;
             }
         }
+        .problems{
+            &-block{
+                padding: 1rem 1.2rem;
+                &-two{
+                    padding-top: 5%;
+                }
+            }
+            &-img{
+                width: 3rem;
+                margin-right: 1rem;
+                &-two{
+                    width: 3rem;
+                    margin-bottom: 1rem;
+                }
+            }
+            &-name{
+                font-size: 1.4rem;
+            }
+            &-bloking{
+                margin-bottom: 1.4rem;
+            }
+            &-paragraph{
+                font-size: 1rem;
+            }
+            &-button{
+                margin-top: 1rem;
+                padding: 1rem 0rem;
+                font-size: 1rem;
+            }
+            &-sename{
+                font-size: 1.4rem;
+                line-height: 1.6rem;
+            }
+        }
 }
 @media(max-width: 450px){
     .section{
         &-title{
             font-size: 2.2rem;
+        }
+        &-paragraph{
+            font-size: 1.1rem;
+            margin-bottom: 4rem;
+        }
+    }
+    .washer{
+        &-first_window{
+            background: url(../img/washer/first-window/bg_mobile.png) no-repeat left bottom;
+            background-size: cover;
+            padding-bottom: 13rem;
         }
     }
     .home{
@@ -1260,6 +1399,27 @@ option{
         &-input{
             width: 100%;
             padding: 1rem;
+        }
+    }
+    .problems{
+        padding: 4rem 0rem;
+        &-block{
+            padding: 1rem 0.5rem;
+        }
+        &-paragraph{
+            font-size: 1rem;
+            min-height: 15rem;
+            &-two{
+                line-height: 169.7%;
+            }
+        }
+        &-name{
+            font-size: 1.2rem;
+        }
+        &-img{
+            &-two{
+                text-align: center;
+            }
         }
     }
 

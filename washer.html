@@ -24,7 +24,7 @@
                 <nav class="header__menu">
                     <ul class="header__list">
                         <li><a href="/index.html"   class="header__link">Главная</a></li>
-                        <li><a href="javascript://0"  onclick="slowScroll('#services')" class="header__link">Услуги</a></li>
+                        <li><a href="/index.html#services"   class="header__link">Услуги</a></li>
                         <li><a href="javascript://0"  onclick="slowScroll('#about')" class="header__link">О нас</a></li>
                         <li><a href="javascript://0"  onclick="slowScroll('#rewiews')"   class="header__link">Отзывы</a></li>
                         <li><a href="https://vk.com/budetsdel" class="header-link"><img src="./img/header/vk.png" alt="" class="header-link-img-two"></a></li>
@@ -43,13 +43,13 @@
         </div>
     </header>
 
-    <section class="home-first_window section">
+    <section class="washer-first_window section">
         <div class="container">
             <div class="row">
                <div class="col-lg-7 col-md-7 col-10">
                 <span class="home-first_window-span">Выезд в течении получаса</span>
-                <h1 class="home-first_window-title">Решим любую проблему с вашей техникой в день обращения</h1>
-                <p class="home-first_window-paragraph">Вернём Вам привычный комфорт и распорядок дня. Быстро устраним любые неисправности и поломки на дому или в офисе.</p>
+                <h1 class="home-first_window-title">Ремонт стиральных машин в Тюмени в день обращения</h1>
+                <p class="home-first_window-paragraph">Вернём Вам привычный бытовой комфорт и распорядок дня. Быстро устраним любые неисправности и поломки.</p>
                 <div class="button-block">
                     <button class="button home-first_window-button popup-btn">Вызвать мастера</button>
                 </div>
@@ -57,6 +57,8 @@
             </div>
         </div>
     </section>
+
+
 
     <section class="section pluses">
         <div class="container">
@@ -92,56 +94,142 @@
         </div>
     </section>
 
-    <section class="section home-services" id="services">
+    <section class="section problems">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h4 class="section-title home-services-title">Выберите нужную Вам услугу</h4>
+                    <h3 class="section-title">Посмотрите причины частых<br> неисправностей</h3>
+                <p class="section-paragraph">Мы указали самые явные причины неисправностей, но в каждом<br> конкретном случае всегда нужна диагностика специалиста.</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-3 col-md-3 col-12">
-                    <a href="#" class="home-services-link">
-                        <div class="home-services-block">
-                            <img src="./img/home/services/first.png" alt="" class="home-services-img">
-                            <img src="./img/home/services/white/first.png" alt="" class="home-services-img_white">
-                            <p class="home-services-name">Ремонт холодильников</p>
+                <div class="col-lg-4 col-md-4 col-6">
+                    <div class="problems-block">
+                        <div class="problems-bloking">
+                            <img src="./img/problems/power.png" alt="" class="problems-img">
+                            <h5 class="problems-name">Не включается</h5>
                         </div>
-                    </a>
+                        <p class="problems-paragraph">Сломано устройство блокировки люка<br>
+                            Сломалась кнопка «старт/стоп»<br>
+                            Неисправен фильтр помех (ФПС)<br>
+                            Вышел из строя программатор (КСМА)<br>
+                            Неисправность электронного модуля</p>
+                        <button class="button problems-button popup-btn">У меня такая проблема</button>
+                    </div>
                 </div>
-                <div class="col-lg-3 col-md-3 col-12">
-                    <a href="./washer.html" class="home-services-link">
-                        <div class="home-services-block">
-                            <img src="./img/home/services/twice.png" alt="" class="home-services-img">
-                            <img src="./img/home/services/white/twice.png" alt="" class="home-services-img_white">
-                            <p class="home-services-name">Ремонт
-                                стиральных машины</p>
+                <div class="col-lg-4 col-md-4 col-6">
+                    <div class="problems-block">
+                        <div class="problems-bloking">
+                            <img src="./img/problems/sliv.png" alt="" class="problems-img">
+                            <h5 class="problems-name">Не сливает воду</h5>
                         </div>
-                    </a>
+                        <p class="problems-paragraph">Засор в фильтре или патрубке<br>
+                            Сломался сливной насос (помпа)<br>
+                            Вышел из строя управляющий модуль<br>
+                            Сломан датчик уровня воды<br>
+                            Повреждена плата</p>
+                        <button class="button problems-button popup-btn">У меня такая проблема</button>
+                    </div>
                 </div>
-                <div class="col-lg-3 col-md-3 col-12">
-                    <a href="#" class="home-services-link">
-                        <div class="home-services-block">
-                            <img src="./img/home/services/three.png" alt="" class="home-services-img">
-                            <img src="./img/home/services/white/three.png" alt="" class="home-services-img_white">
-                            <p class="home-services-name">Ремонт
-                                посудомоечных машин</p>
+                <div class="col-lg-4 col-md-4 col-6">
+                    <div class="problems-block">
+                        <div class="problems-bloking">
+                            <img src="./img/problems/water.png" alt="" class="problems-img">
+                            <h5 class="problems-name">Течёт вода</h5>
                         </div>
-                    </a>
+                        <p class="problems-paragraph">Протекает сливной/заливной шланг<br>
+                            Протекает патрубок<br>
+                            Засор в дозаторе для моющих средств<br>
+                            Повреждена манжета люка<br>
+                            Протекает сливной насос
+                            </p>
+                        <button class="button problems-button popup-btn">У меня такая проблема</button>
+                    </div>
                 </div>
-                <div class="col-lg-3 col-md-3 col-12">
-                    <a href="#" class="home-services-link">
-                        <div class="home-services-block">
-                            <img src="./img/home/services/four.png" alt="" class="home-services-img">
-                            <img src="./img/home/services/white/four.png" alt="" class="home-services-img_white">
-                            <p class="home-services-name">Ремонт
-                                сушильных машин</p>
+                <div class="col-lg-4 col-md-4 col-6">
+                    <div class="problems-block">
+                        <div class="problems-bloking">
+                            <img src="./img/problems/temp.png" alt="" class="problems-img">
+                            <h5 class="problems-name">Не греет воду</h5>
                         </div>
-                    </a>
+                        <p class="problems-paragraph">Вышел из строя ТЭН<br>
+                            Сломался датчик температуры<br>
+                            Вышел из строя электронный модуль<br>
+                            Сломался программатор (КСМА)<br>
+                            Повреждена электронная плата<br>
+                            </p>
+                        <button class="button problems-button popup-btn">У меня такая проблема</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-6">
+                    <div class="problems-block">
+                        <div class="problems-bloking">
+                            <img src="./img/problems/djim.png" alt="" class="problems-img">
+                            <h5 class="problems-name">Не отжимает</h5>
+                        </div>
+                        <p class="problems-paragraph problems-paragraph-two">Сломан КСМА / электронный управляющий модуль<br>
+                            Неисправность мотора<br>
+                            Растяжение приводного ремня<br>
+                            Неисправность датчика температуры (термостата)<br>
+                            </p>
+                        <button class="button problems-button popup-btn">У меня такая проблема</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-6">
+                    <div class="problems-block">
+                        <div class="problems-bloking">
+                            <img src="./img/problems/spinning.png" alt="" class="problems-img">
+                            <h5 class="problems-name">Не крутится барабан</h5>
+                        </div>
+                        <p class="problems-paragraph">Обрыв/ослабление приводного ремня<br>
+                            Износ щёток электродвигателя<br>
+                            Сломался программатор (КСМА)<br>
+                            Неисправен управляющий модуль<br>
+                            Не работает электродвигатель</p>
+                        <button class="button problems-button popup-btn">У меня такая проблема</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-6">
+                    <div class="problems-block">
+                        <div class="problems-bloking">
+                            <img src="./img/problems/open.png" alt="" class="problems-img">
+                            <h5 class="problems-name">Не открывается люк</h5>
+                        </div>
+                        <p class="problems-paragraph">Сломалась ручка люка<br>
+                            Сломано устройство блокировки люка<br>
+                            Неисправен управляющий модуль<br>
+                            Сломался программатор (КСМА)<br>
+                            Неисправен фильтр помех (ФПС)</p>
+                        <button class="button problems-button popup-btn">У меня такая проблема</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-6">
+                    <div class="problems-block">
+                        <div class="problems-bloking">
+                            <img src="./img/problems/noise.png" alt="" class="problems-img">
+                            <h5 class="problems-name">Сильно шумит</h5>
+                        </div>
+                        <p class="problems-paragraph">Сломалась ручка люка<br>
+                            Сломано устройство блокировки люка<br>
+                            Неисправен управляющий модуль<br>
+                            Сломался программатор (КСМА)<br>
+                            Неисправен фильтр помех (ФПС)</p>
+                        <button class="button problems-button popup-btn">У меня такая проблема</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="problems-block-two">
+                        <img src="./img/problems/warning.png" alt="" class="problems-img-two">
+                        <p class="problems-sename">
+                            Не пытайтесь самостоятельно исправить поломку, если не обладаете должными навыками. Это может привести к ухудшению работы или к уменьшению срока службы Вашей стиральной машины.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+
 
     <section class="section plans ">
         <div class="container">
@@ -200,23 +288,7 @@
         </div>
     </section>
 
-    <section class="home-comfort" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7 col-md-7">
-                    <h4 class="home-comfort-title">Мы ценим каждого клиента<br>
-                        и работаем для Вашего комфорта</h4>
-                    <p class="home-comfort-paragraph">Несколько слов от руководителя компании «Будет сделано»
-                    </p>
-                    <p class="home-comfort-paragraph">Дpузья, мoя цeль- сделать лучший сервисный центр в Тюмени, предоставляя самую клиентоориентированную систему обслуживания. Ecли Вы считаете, что ктo-либo из наших coтpудникoв нe paздeляeт нaши цeннocти — oбязaтeльнo нaпишитe мнe!
-                    </p>
-                </div>
-                <div class="col-lg-5 col-md-5">
-                    <img src="./img/home/comfort/hand.png" alt="" class="home-comfort-img">
-                </div>
-            </div>
-        </div>
-    </section>
+  
 
     <section class="section rewiews" id="rewiews">
         <div class="container">

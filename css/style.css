@@ -66,6 +66,14 @@ a:hover {
   font-size: 2.8rem;
   color: #242625;
 }
+.section-paragraph {
+  padding-top: 4rem;
+  text-align: center;
+  font-family: 'MazzardM_Regular', sans-serif;
+  color: #242625;
+  font-size: 1.8rem;
+  margin-bottom: 20rem;
+}
 .header {
   position: fixed;
   width: 100%;
@@ -262,6 +270,12 @@ a:hover {
 .home-comfort-img {
   text-align: center;
   width: 100%;
+}
+.washer-first_window {
+  padding-top: 16rem;
+  background: url(../img/washer/first-window/bg.png) no-repeat center;
+  background-size: cover;
+  padding-bottom: 15rem;
 }
 .pluses {
   padding: 3rem 0rem;
@@ -526,6 +540,65 @@ option:focus {
 .footer-es {
   background-color: #351EC0;
   padding: 0.8rem 0rem;
+}
+.problems {
+  padding: 10rem 0rem;
+}
+.problems-block {
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+  background-color: #d9dffc;
+  margin-bottom: 2.5rem;
+}
+.problems-block-two {
+  padding-top: 20%;
+  padding-left: 5%;
+}
+.problems-bloking {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.problems-img {
+  width: 4rem;
+  margin-right: 2rem;
+}
+.problems-img-two {
+  margin-bottom: 3rem;
+}
+.problems-name {
+  font-family: 'MazzardM_Bold', sans-serif;
+  color: #381ed4;
+  font-size: 2rem;
+}
+.problems-paragraph {
+  font-family: 'MazzardM_Regular', sans-serif;
+  color: #381ed4;
+  font-size: 1.6rem;
+  line-height: 169.7%;
+}
+.problems-paragraph-two {
+  line-height: 142.2%;
+}
+.problems-button {
+  margin-top: 3rem;
+  width: 100%;
+  padding: 1.8rem 7rem;
+  background-color: #381ed4;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: 'MazzardM_Bold', sans-serif;
+  font-size: 1.4rem;
+}
+.problems-button:hover {
+  background-color: #f2994a;
+}
+.problems-sename {
+  font-family: 'MazzardM_Regular', sans-serif;
+  color: #242625;
+  font-size: 1.7rem;
+  line-height: 2rem;
+  margin: 0;
 }
 .none {
   display: none;
@@ -810,6 +883,10 @@ option:focus {
   .header__button {
     display: none;
   }
+  .washer-first_window {
+    padding-top: 12rem;
+    padding-bottom: 18rem;
+  }
   .home-first_window {
     padding-top: 12rem;
     padding-bottom: 8rem;
@@ -885,6 +962,15 @@ option:focus {
   .form-input {
     margin-bottom: 1rem;
     padding: 0.5rem;
+  }
+  .problems-paragraph {
+    font-size: 1.2rem;
+  }
+  .problems-button {
+    padding: 1.8rem 3rem;
+  }
+  .problems-name {
+    font-size: 1.8rem;
   }
 }
 @media (max-width: 800px) {
@@ -1025,10 +1111,51 @@ option:focus {
   .modal-content {
     width: 60%;
   }
+  .problems-block {
+    padding: 1rem 1.2rem;
+  }
+  .problems-block-two {
+    padding-top: 5%;
+  }
+  .problems-img {
+    width: 3rem;
+    margin-right: 1rem;
+  }
+  .problems-img-two {
+    width: 3rem;
+    margin-bottom: 1rem;
+  }
+  .problems-name {
+    font-size: 1.4rem;
+  }
+  .problems-bloking {
+    margin-bottom: 1.4rem;
+  }
+  .problems-paragraph {
+    font-size: 1rem;
+  }
+  .problems-button {
+    margin-top: 1rem;
+    padding: 1rem 0rem;
+    font-size: 1rem;
+  }
+  .problems-sename {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
 }
 @media (max-width: 450px) {
   .section-title {
     font-size: 2.2rem;
+  }
+  .section-paragraph {
+    font-size: 1.1rem;
+    margin-bottom: 4rem;
+  }
+  .washer-first_window {
+    background: url(../img/washer/first-window/bg_mobile.png) no-repeat left bottom;
+    background-size: cover;
+    padding-bottom: 13rem;
   }
   .home-first_window {
     padding-bottom: 13rem;
@@ -1163,6 +1290,25 @@ option:focus {
   .form-input {
     width: 100%;
     padding: 1rem;
+  }
+  .problems {
+    padding: 4rem 0rem;
+  }
+  .problems-block {
+    padding: 1rem 0.5rem;
+  }
+  .problems-paragraph {
+    font-size: 1rem;
+    min-height: 15rem;
+  }
+  .problems-paragraph-two {
+    line-height: 169.7%;
+  }
+  .problems-name {
+    font-size: 1.2rem;
+  }
+  .problems-img-two {
+    text-align: center;
   }
 }
 @media (max-width: 400px) {
