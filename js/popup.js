@@ -1,7 +1,8 @@
 $('.popup-btn').on('click',  function(event) {
     event.preventDefault();
     $('.modal').fadeIn();
-	$('body').addClass('stop');
+    $('body').addClass('stop');
+    $('.popup').remove();
 });
 $('.popup-close').on('click',  function(event) {
     event.preventDefault();

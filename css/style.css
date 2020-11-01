@@ -74,6 +74,9 @@ a:hover {
   font-size: 1.8rem;
   margin-bottom: 20rem;
 }
+.none {
+  display: none;
+}
 .header {
   position: fixed;
   width: 100%;
@@ -515,6 +518,9 @@ option:focus {
 }
 .footer-paragraph:hover {
   text-decoration: underline;
+}
+.footer-logo {
+  width: 6rem;
 }
 .footer-twice {
   display: flex;
@@ -1252,6 +1258,9 @@ option:focus {
   }
   .footer-link-two {
     margin-right: 0;
+  }
+  .footer-logo {
+    width: 10rem;
   }
   .popup-content {
     width: 90%;
