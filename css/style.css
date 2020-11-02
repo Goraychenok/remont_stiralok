@@ -477,6 +477,54 @@ option:focus {
   width: 100%;
   padding-top: 2rem;
 }
+.diskond {
+  padding: 7rem 0rem;
+  background: url(../img/diskond/bg.png) no-repeat center;
+  background-size: cover;
+}
+.diskond-title {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  color: #ffffff;
+  font-family: 'MazzardM_Bold', sans-serif;
+  font-size: 2.8rem;
+}
+.whyworks {
+  padding: 4rem 0rem;
+}
+.whyworks-title {
+  margin-bottom: 8rem;
+}
+.whyworks-img {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+.whyworks-img-two {
+  display: none;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.whyworks-button {
+  padding: 1.6rem 5rem;
+  font-size: 1.8rem;
+}
+.whyworks-button-block {
+  text-align: center;
+}
+.marks {
+  padding: 10rem 0rem;
+}
+.marks-title {
+  margin-bottom: 7rem;
+}
+.marks-img {
+  width: 100%;
+}
+.marks-img-two {
+  display: none;
+  width: 100%;
+}
 .footer-st {
   background-color: #381ed4;
 }
@@ -1149,6 +1197,15 @@ option:focus {
     font-size: 1.4rem;
     line-height: 1.6rem;
   }
+  .diskond {
+    padding: 4rem 0rem;
+  }
+  .diskond-title {
+    font-size: 1.8rem;
+  }
+  .marks {
+    padding: 5rem 0rem;
+  }
 }
 @media (max-width: 450px) {
   .section-title {
@@ -1318,6 +1375,21 @@ option:focus {
   }
   .problems-img-two {
     text-align: center;
+  }
+  .whyworks-img {
+    display: none;
+  }
+  .whyworks-img-two {
+    display: block;
+  }
+  .marks-img {
+    display: none;
+  }
+  .marks-img-two {
+    display: block;
+  }
+  .marks-title {
+    margin-bottom: 3rem;
   }
 }
 @media (max-width: 400px) {
