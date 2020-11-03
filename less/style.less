@@ -306,6 +306,30 @@ a:hover{
         padding-bottom: 15rem;
     }
 }
+.dishwasher{
+    &-first_window{
+        padding-top: 16rem;
+        background: url(../img/dishwasher/bg.png) no-repeat center ;
+        background-size: cover;
+        padding-bottom: 15rem;
+    }
+}
+.dryer{
+    &-first_window{
+        padding-top: 16rem;
+        background: url(../img/dryer/bg.png) no-repeat center top;
+        background-size: cover;
+        padding-bottom: 15rem;
+    }
+}
+.ice{
+    &-first_window{
+        padding-top: 16rem;
+    background: url(../img/ice/bg.png) no-repeat center ;
+    background-size: cover;
+    padding-bottom: 15rem;
+    }
+}
 //Pluses
 .pluses{
     padding: 3rem 0rem;
@@ -559,6 +583,45 @@ option{
             display: none;
             width: 100%;
         }
+    }
+}
+.service{
+    padding: 4rem 0rem;
+    background: url(../img/diskond/bg.png) no-repeat center;
+    background-size: cover;
+    &-title{
+        margin-bottom: 2.5rem;
+    }
+    &-paragraph{
+        .mazzreg();
+        font-size: 2rem;
+        line-height: 2.4rem;
+        text-align: center;
+        color: @light
+    }
+}
+.remont_out{
+    padding-bottom: 8rem;
+    &-title{
+        margin-bottom: 5rem;
+    }
+    &-block{
+        width: 100%;
+        text-align: center;
+        background-color: @dop;
+        padding: 3rem 0rem;
+        border-radius: 1rem;
+    }
+    &-img{
+        width: 5rem;
+        margin-bottom: 1.5rem;
+    }
+    &-name{
+        padding: 0;
+        margin: 0;
+        .mazzmed();
+        color: @light;
+        font-size: 2rem;
     }
 }
 //Footer
@@ -993,6 +1056,24 @@ option{
             padding-bottom: 18rem;
         }
     }
+    .dishwasher{
+        &-first_window{
+            padding-top: 12rem;
+            padding-bottom: 18rem;
+        }
+    }
+    .dryer{
+        &-first_window{
+            padding-top: 12rem;
+            padding-bottom: 18rem;
+        }
+    }
+    .ice{
+        &-first_window{
+            padding-top: 12rem;
+            padding-bottom: 18rem;
+        }
+    }
 
     .home{
         &-first_window{
@@ -1099,6 +1180,10 @@ option{
     }
 }
 @media(max-width: 800px){
+    .service-paragraph{
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+    }
     .home{
         &-first_window{
             &-button{
@@ -1299,6 +1384,13 @@ option{
         }
 }
 @media(max-width: 450px){
+    .remont_out{
+        padding-bottom: 2rem;
+        &-block{
+            padding: 1.5rem 0rem;
+            margin-bottom: 2rem;
+        }
+    }
     .section{
         &-title{
             font-size: 2.2rem;
@@ -1311,6 +1403,27 @@ option{
     .washer{
         &-first_window{
             background: url(../img/washer/first-window/bg_mobile.png) no-repeat left bottom;
+            background-size: cover;
+            padding-bottom: 13rem;
+        }
+    }
+    .dishwasher{
+        &-first_window{
+            background: url(../img/dishwasher/bg_mobile.png) no-repeat left bottom;
+            background-size: cover;
+            padding-bottom: 13rem;
+        }
+    }
+    .dryer{
+        &-first_window{
+            background: url(../img/dryer/bg_mobile.png) no-repeat left bottom;
+            background-size: cover;
+            padding-bottom: 13rem;
+        }
+    }
+    .ice{
+        &-first_window{
+            background: url(../img/ice/bg_mobile.png) no-repeat left bottom;
             background-size: cover;
             padding-bottom: 13rem;
         }

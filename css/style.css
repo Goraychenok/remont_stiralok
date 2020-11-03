@@ -280,6 +280,24 @@ a:hover {
   background-size: cover;
   padding-bottom: 15rem;
 }
+.dishwasher-first_window {
+  padding-top: 16rem;
+  background: url(../img/dishwasher/bg.png) no-repeat center;
+  background-size: cover;
+  padding-bottom: 15rem;
+}
+.dryer-first_window {
+  padding-top: 16rem;
+  background: url(../img/dryer/bg.png) no-repeat center top;
+  background-size: cover;
+  padding-bottom: 15rem;
+}
+.ice-first_window {
+  padding-top: 16rem;
+  background: url(../img/ice/bg.png) no-repeat center;
+  background-size: cover;
+  padding-bottom: 15rem;
+}
 .pluses {
   padding: 3rem 0rem;
 }
@@ -524,6 +542,45 @@ option:focus {
 .marks-img-two {
   display: none;
   width: 100%;
+}
+.service {
+  padding: 4rem 0rem;
+  background: url(../img/diskond/bg.png) no-repeat center;
+  background-size: cover;
+}
+.service-title {
+  margin-bottom: 2.5rem;
+}
+.service-paragraph {
+  font-family: 'MazzardM_Regular', sans-serif;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  text-align: center;
+  color: #ffffff;
+}
+.remont_out {
+  padding-bottom: 8rem;
+}
+.remont_out-title {
+  margin-bottom: 5rem;
+}
+.remont_out-block {
+  width: 100%;
+  text-align: center;
+  background-color: #f2994a;
+  padding: 3rem 0rem;
+  border-radius: 1rem;
+}
+.remont_out-img {
+  width: 5rem;
+  margin-bottom: 1.5rem;
+}
+.remont_out-name {
+  padding: 0;
+  margin: 0;
+  font-family: 'MazzardM_Medium', sans-serif;
+  color: #ffffff;
+  font-size: 2rem;
 }
 .footer-st {
   background-color: #381ed4;
@@ -941,6 +998,18 @@ option:focus {
     padding-top: 12rem;
     padding-bottom: 18rem;
   }
+  .dishwasher-first_window {
+    padding-top: 12rem;
+    padding-bottom: 18rem;
+  }
+  .dryer-first_window {
+    padding-top: 12rem;
+    padding-bottom: 18rem;
+  }
+  .ice-first_window {
+    padding-top: 12rem;
+    padding-bottom: 18rem;
+  }
   .home-first_window {
     padding-top: 12rem;
     padding-bottom: 8rem;
@@ -1028,6 +1097,10 @@ option:focus {
   }
 }
 @media (max-width: 800px) {
+  .service-paragraph {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
   .home-first_window-button {
     font-size: 1.8rem;
   }
@@ -1208,6 +1281,13 @@ option:focus {
   }
 }
 @media (max-width: 450px) {
+  .remont_out {
+    padding-bottom: 2rem;
+  }
+  .remont_out-block {
+    padding: 1.5rem 0rem;
+    margin-bottom: 2rem;
+  }
   .section-title {
     font-size: 2.2rem;
   }
@@ -1217,6 +1297,21 @@ option:focus {
   }
   .washer-first_window {
     background: url(../img/washer/first-window/bg_mobile.png) no-repeat left bottom;
+    background-size: cover;
+    padding-bottom: 13rem;
+  }
+  .dishwasher-first_window {
+    background: url(../img/dishwasher/bg_mobile.png) no-repeat left bottom;
+    background-size: cover;
+    padding-bottom: 13rem;
+  }
+  .dryer-first_window {
+    background: url(../img/dryer/bg_mobile.png) no-repeat left bottom;
+    background-size: cover;
+    padding-bottom: 13rem;
+  }
+  .ice-first_window {
+    background: url(../img/ice/bg_mobile.png) no-repeat left bottom;
     background-size: cover;
     padding-bottom: 13rem;
   }

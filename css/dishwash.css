@@ -1,0 +1,13 @@
+@media(max-width:450px){
+    .problems-paragraph{
+        min-height: 12rem;
+    }
+
+}
+
+@media(max-width: 400px){
+    .problems-paragraph{
+        font-size: 0.9rem;
+        min-height: 11rem;
+    }
+}
