@@ -582,6 +582,65 @@ option:focus {
   color: #ffffff;
   font-size: 2rem;
 }
+tr {
+  margin-bottom: 2rem;
+}
+.cost {
+  padding: 8rem 0rem;
+}
+.cost-title {
+  margin-bottom: 5rem;
+}
+.cost-block {
+  padding: 5rem 21rem;
+  background-color: #D9DFFC;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 2rem;
+}
+.cost-blocking {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+}
+.cost-blocking-first {
+  margin-bottom: 4rem;
+}
+.cost-name {
+  font-family: 'MazzardM_Bold', sans-serif;
+  font-size: 2.2rem;
+  color: #381ed4;
+  margin-bottom: 2rem;
+}
+.cost-label {
+  font-size: 1.8rem;
+  font-family: 'MazzardM_Regular', sans-serif;
+  color: #242625;
+  width: 35rem;
+  cursor: pointer;
+}
+.cost-label:checked {
+  color: #381ed4;
+}
+.cost-input[type="checkbox"] {
+  width: 2rem;
+  border: 0.5rem solid #381ed4;
+  border-radius: 100%;
+  cursor: pointer;
+  background-color: #381ed4;
+}
+.cost-block-button {
+  padding-top: 5rem;
+  text-align: center;
+}
+.cost-button {
+  padding: 1.6rem 6rem;
+  background-color: #381ed4;
+  font-size: 1.8rem;
+}
+.cost-button:hover {
+  background-color: #f2994a;
+}
 .footer-st {
   background-color: #381ed4;
 }
@@ -885,6 +944,10 @@ option:focus {
   color: #000;
 }
 @media (max-width: 1200px) {
+  .cost-label {
+    width: 28rem;
+    padding-left: 1rem;
+  }
   .header__block {
     display: block;
     padding-top: 8rem;
@@ -1097,6 +1160,9 @@ option:focus {
   }
 }
 @media (max-width: 800px) {
+  .cost-block {
+    padding: 2rem 3rem;
+  }
   .service-paragraph {
     font-size: 1.4rem;
     line-height: 1.6rem;
@@ -1281,6 +1347,16 @@ option:focus {
   }
 }
 @media (max-width: 450px) {
+  .cost-block {
+    padding: 1rem 1rem;
+  }
+  .cost-name {
+    font-size: 1.4rem;
+  }
+  .cost-label {
+    font-size: 1.2rem;
+    width: 15rem;
+  }
   .remont_out {
     padding-bottom: 2rem;
   }

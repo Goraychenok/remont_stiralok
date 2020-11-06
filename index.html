@@ -175,22 +175,22 @@
                 </div>
                 <div class="col-lg-5 offset-lg-1 col-md-5 offset-md-1 col-12 offset-0">
                     <div class="plans-block-form">
-                        <form action="#" class="plans-form">
+                        <form action="./mailer/smart_three.php" method="POST" class="plans-form" id="form_tree">
                             <h5 class="plans-block-form-title">Вызовите мастера
                                 прямо сейчас или
                                 к удобному времени</h5>
                             <p class="plans-block-form-name">Выберите услугу:</p>
-                            <select  class="plans-block-form-input" form  required name="hero[]">
+                            <select  class="plans-block-form-input"  required name="user_service">
                                 <option disabled>Выберите услугу</option>
-                                <option selected value="Ремонт Холодильника">Ремонт ходольника</option>
+                                <option selected value="Ремонт Холодильника">Ремонт холодильника</option>
                                 <option  value="Ремонт стиральной машины">Ремонт стиральной машины</option>
                                 <option value="Ремонт сушилки">Ремонт сушилки</option>
                                 <option value="Ремонт посудомоечной машины">Ремонт посудомоечной машины</option>
                             </select>
                             <p class="plans-block-form-name">Ваше имя:</p>
-                            <input type="text" placeholder="Екатерина" class="plans-block-form-input">
+                            <input type="text" placeholder="Екатерина" name="user_name" class="plans-block-form-input">
                             <p class="plans-block-form-name">Ваш номер телефона:</p>
-                            <input type="text" id="phone-mask-two" placeholder="+7(956)595-99-88" class="plans-block-form-input">
+                            <input type="text" id="phone-mask-two" name="user_phone" placeholder="+7(956)595-99-88" class="plans-block-form-input">
                             <button class="plans-block-form-button button">Вызвать мастера</button>
                             <p class="plans-block-form-span"> *Нажимая на кнопку «Вызвать мастера», Вы даёте своё согласие на обработку персональных данных.</p>
                         </form>
@@ -362,7 +362,7 @@
                             <img src="./img/contacts/telega.png" alt="" class="contacts-img">
                             <p class="contacts-name">8(3452)53-98-50</p>
                         </a>
-                        <a href="viber://add?number=89829212441" class="contacts-link">
+                        <a  href="viber://chat?number=8(3452)53-98-50" class="contacts-link">
                             <img src="./img/contacts/viber.png" alt="" class="contacts-img">
                             <p class="contacts-name">8(3452)53-98-50</p>
                         </a>
@@ -437,11 +437,11 @@
             <button class="popup-close">&#215;</button>
             <div class="popup-form">
               <h3 class="popup-title ">Оформите заявку на ремонт прямо сейчас<br> И получите скидку 20%</h3>
-              <form action="mailer/smart.php" class="form" method="POST" id="form">
+              <form action="./mailer/smart.php" class="form" method="POST" id="form">
                 <p class="popup-name">Выберите услугу:</p>
-                <select  class="plans-block-form-input" form  required name="hero[]">
+                <select  class="plans-block-form-input"  name="user_service" required >
                     <option disabled>Выберите услугу</option>
-                    <option selected value="Ремонт Холодильника">Ремонт ходольника</option>
+                    <option selected value="Ремонт Холодильника">Ремонт холодильника</option>
                     <option  value="Ремонт стиральной машины">Ремонт стиральной машины</option>
                     <option value="Ремонт сушилки">Ремонт сушилки</option>
                     <option value="Ремонт посудомоечной машины">Ремонт посудомоечной машины</option>
@@ -449,7 +449,7 @@
                     <p class="popup-name">Ваше имя (как к вам обращаться):</p> 
                   <input type="text" required  placeholder="Екатерина" class="form-input" name="user_name" >
                   <p class="popup-name">Номер телефона:</p> 
-                  <input type="text" name="user_summ" id="phone" placeholder="+7(956)595-99-88" required  class="form-input">
+                  <input type="text" name="user_phone" id="phone" placeholder="+7(956)595-99-88" required  class="form-input">
                   
                     
                     <div class="popup-block">
@@ -470,11 +470,11 @@
               <h3 class="modal-title ">Вызовите мастера
                 прямо сейчас или
                 к удобному времени</h3>
-              <form action="mailer/smart.php" class="form" method="POST" id="form"> 
+              <form action="./mailer/smart.php" class="form" method="POST" id="form_two"> 
                     <p class="modal-name">Ваше имя (как к вам обращаться):</p> 
                   <input type="text" required  placeholder="Екатерина" class="form-input" name="user_name" >
                   <p class="modal-name">Номер телефона:</p> 
-                  <input type="text" name="user_summ" id="phone-mask" placeholder="+7(956)595-99-88" required  class="form-input">
+                  <input type="text" name="user_phone" id="phone-mask" placeholder="+7(956)595-99-88" required  class="form-input">
                   
                     
                     <div class="modal-block">
@@ -492,6 +492,8 @@
     <script src="./js/jquery.maskedinput.min.js"></script>
     <script src="./js/script.js"></script>
     <script src="./js/popup.js"></script>
+    <script src="./js/send.js"></script>
+
 
 </body>
 </html>

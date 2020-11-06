@@ -624,6 +624,72 @@ option{
         font-size: 2rem;
     }
 }
+
+tr{
+    margin-bottom: 2rem;
+}
+//Cost
+.cost{
+    padding: 8rem 0rem;
+    &-title{
+        margin-bottom: 5rem;
+    }
+    &-block{
+        padding: 5rem 21rem;
+        background-color: #D9DFFC;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 2rem;
+    }
+    &-blocking{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2.5rem;
+        &-first{
+            margin-bottom: 4rem;
+        }
+    }
+    &-name{
+        .mazzbold();
+        font-size: 2.2rem;
+        color: @osnova;
+        margin-bottom: 2rem;
+
+    }
+    &-label{
+        font-size: 1.8rem;
+        .mazzreg();
+        color: @text;
+        width: 35rem;
+        cursor: pointer;
+        &:checked{
+            color: @osnova;
+        }
+    }
+    &-input[type="checkbox"]{
+        width: 2rem;
+        border: 0.5rem solid @osnova;
+        border-radius: 100%; 
+        cursor: pointer;
+        background-color: @osnova;
+
+        
+    }
+    &-block-button{
+        padding-top: 5rem;
+        text-align: center;
+    }
+    &-button{
+        padding: 1.6rem 6rem;
+        background-color: @osnova;
+        font-size: 1.8rem;
+        &:hover{
+            background-color: @dop;
+        }
+    }
+}
+
+
 //Footer
 .footer{
     &-st{
@@ -938,8 +1004,13 @@ option{
   }
 //Media
 @media(max-width: 1200px){
+    .cost{
+        &-label{
+            width: 28rem;
+            padding-left: 1rem;
+        }
+    }
     //Header
-
     .header__block{
         display: block;
         padding-top: 8rem;
@@ -1180,6 +1251,11 @@ option{
     }
 }
 @media(max-width: 800px){
+    .cost{
+        &-block{
+            padding: 2rem 3rem;
+        }
+    }
     .service-paragraph{
         font-size: 1.4rem;
         line-height: 1.6rem;
@@ -1384,6 +1460,20 @@ option{
         }
 }
 @media(max-width: 450px){
+    .cost{
+        &-block{
+            padding: 1rem 1rem;
+
+        }
+        &-name{
+            font-size: 1.4rem;
+        }
+        &-label{
+            font-size: 1.2rem;
+            width: 15rem;
+
+        }
+    }
     .remont_out{
         padding-bottom: 2rem;
         &-block{
