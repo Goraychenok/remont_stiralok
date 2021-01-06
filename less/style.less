@@ -1,32 +1,18 @@
 //Fonts
-@font-face { font-family: 'MazzardM_Regular';
-    src: url('../fonts/MazzardM-Regular.ttf'); }
-@font-face { font-family: 'MazzardM_Medium';
-    src: url('../fonts/MazzardM-Medium.ttf'); } 
-@font-face { font-family: 'MazzardM_Light';
-    src: url('../fonts/MazzardM-Light.ttf'); }
-@font-face { font-family: 'MazzardM_Bold';
-    src: url('../fonts/MazzardM-Bold.ttf'); }            
-
-.mazzreg(){font-family: 'MazzardM_Regular', sans-serif;}
-.mazzmed(){font-family: 'MazzardM_Medium', sans-serif;}
-.mazzlight(){font-family: 'MazzardM_Light', sans-serif;}
-.mazzbold(){font-family: 'MazzardM_Bold', sans-serif;}
-.opensans(){font-family: 'Open Sans', sans-serif;}
-
+.inter(){font-family: 'Inter', sans-serif;}
 
 //Colors
+@osnova:#6EE06C;
 @light: #fff;
-@osnova: #381ED4;
-@text: #242625;
-@dop: #F2994A;
-@text_gray:#959595;
-@block_gray:#D9DFFC;
-@text_gray_two:#757575;
+@black: #000;
+@text: #121212;
+@gray: #494949;
+@button: #6EC950;
+@bg_gray: #636780;
 
 
-//Basic
 
+//Basis
 html{
     font-size: 10px;
 }
@@ -60,40 +46,6 @@ a:hover{
     cursor: pointer;
 }
 
-.stop{
-    overflow-y: hidden;
-}
-.button{
-    border: none;
-    cursor: pointer;
-    background-color: @dop;
-    color: @light;
-    .mazzbold();
-    border-radius: 1.2rem;
-    transition: 0.3s;
-    &:hover{
-        background-color: @osnova;
-    }
-}
-.section{
-    &-title{
-        text-align: center;
-        .mazzbold();
-        font-size: 2.8rem;
-        color: @text;
-    }
-    &-paragraph{
-        padding-top: 4rem;
-        text-align: center;
-        .mazzreg();
-        color: @text;
-        font-size: 1.8rem;
-        margin-bottom: 20rem;
-    }
-}
-.none{
-    display: none;
-}
 //header
 .header{
 	position: fixed;
@@ -101,7 +53,7 @@ a:hover{
 	top:0;
 	left:0;
 	z-index: 50;
-	background: @light;
+	background: #FDFDFE;
 }
 .header:before{
 	content: "";
@@ -128,14 +80,15 @@ a:hover{
 }
 .header__list li{
 	list-style: none;
-	margin: 10px 0px 0px 20px;
+	margin: 10px 0px 0px 40px;
 
 }
 .header__link{
 	color: @text;
 	font-size: 1.4rem;
 	text-decoration: none;
-	.mazzreg();
+    .inter();
+    font-weight: 500;
 	align-items: center;
     transition: 0.3s;
 	&:hover{
@@ -176,860 +129,328 @@ a:hover{
         text-decoration: underline;
         color: @text;
     }
-    &-span{
-        padding: 0;
-        margin: 0;
-        font-size: 1.5rem;
-        .mazzreg();
-        color: @text;
-    }
-    &-img{
-        margin-right: 2rem;
-        width: 3rem;
-        &-two{
-            width: 3rem;
-        }
-    }
-}
 
-//HOME
-.home{
-    &-first_window{
-        padding-top: 16rem;
-        background: url(../img/home/first_window/bg.png) no-repeat center ;
-        background-size: cover;
-        padding-bottom: 15rem;
-        &-span{
-            .mazzmed();
-            color: @text_gray;
-            font-size: 1.6rem;
-            padding-top: 15rem;
-        }
-        &-title{
-            .mazzbold();
-            color: @text;
-            font-size: 4rem;
-            padding-top: 2.6rem;
-            margin-bottom: 5rem;
-        }
-        &-paragraph{
-            .mazzmed();
-            font-size: 1.8rem;
-            color: @text_gray_two;
-            padding: 0;
-            margin-bottom: 5rem;
-        }
-        &-button{
-            font-size: 1.8rem;
-            padding: 1.6rem 5.6rem;
-        }
-    }
-    &-services{
-        padding: 11rem 0rem;
-        background-color: #FEFEFE;
-        &-link{
-            text-decoration: none;
-            &:hover{
-                text-decoration: none;
-            }
-        }
-        &-block{
-            text-align: center;
-            padding: 2rem 5rem;
-            border-radius: 1rem;
-            background-color: #D9DFFC;
-            min-height: 17.3rem;
-            transition: 0.3s;
-            &:hover{
-                text-align: center;
-                background-color: @osnova;
-                .home-services-name{
-                    color: @light;
-                }
-                .home-services-img{
-                    display: none;
-                }
-                .home-services-img_white{
-                    display: flex;
-                }
-            }
-        }
-        &-img{
-            margin-bottom: 2rem;
-            &_white{
-                padding-left: 35%;
-                text-align: center;
-                margin-bottom: 2rem;
-                display: none;
-            }
-        }
-        &-name{
-            .mazzreg();
-            font-size: 1.6rem;
-            color: @osnova;
-            line-height: 1.891rem;
-        }
-        &-title{
-            margin-bottom: 7rem; 
-        }
-    }
-    &-comfort{
-        padding: 13rem 0rem;
-        background: url(../img/home/comfort/bg.png) no-repeat center;
-        background-size: cover;
-        &-title{
-            .mazzbold();
-            font-size: 3.6rem;
-            padding-top: 5rem;
-            color: @light;
-            margin-bottom: 5rem;
-        }
-        &-paragraph{
-            .mazzmed();
-            font-size: 2.4rem;
-            line-height: 2.8rem;
-            margin-bottom: 2.8rem;
-            color: @light;
-        }
-        &-img{
-            text-align: center;
-            width: 100%;
-        }
+}
+.button{
+    padding: 1.5rem 6rem;
+    background-color: @button;
+    color: @light;
+    font-size: 1.4rem;
+    .inter();
+    font-weight: 600;
+    border:none;
+    border-radius: 0.5rem;
+    transition: 0.5s;
+    &:hover{
+        background-color: @gray;
     }
 }
-//washer
-.washer{
-    &-first_window{
-        padding-top: 16rem;
-        background: url(../img/washer/first-window/bg.png) no-repeat center ;
-        background-size: cover;
-        padding-bottom: 15rem;
-    }
-}
-.dishwasher{
-    &-first_window{
-        padding-top: 16rem;
-        background: url(../img/dishwasher/bg.png) no-repeat center ;
-        background-size: cover;
-        padding-bottom: 15rem;
-    }
-}
-.dryer{
-    &-first_window{
-        padding-top: 16rem;
-        background: url(../img/dryer/bg.png) no-repeat center top;
-        background-size: cover;
-        padding-bottom: 15rem;
-    }
-}
-.ice{
-    &-first_window{
-        padding-top: 16rem;
-    background: url(../img/ice/bg.png) no-repeat center ;
-    background-size: cover;
-    padding-bottom: 15rem;
-    }
-}
-//Pluses
-.pluses{
-    padding: 3rem 0rem;
-    &-block{
-        display: flex;
-        align-items: center;
-        padding: 1.5rem;
-        border-radius: 1rem;
-        box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.07);
-    }
-    &-img{
-        margin-right: 2.5rem;
-    }
-    &-name{
-        .mazzreg();
-        font-size: 1.4rem;
-        line-height: 1.7rem;
-        color: @osnova;
-        padding: 0;
-        margin: 0;
-    }
-}
-
-//Plans
-.plans{
-    padding: 6rem 0rem;
-    background: url(../img/plans/bg.png) no-repeat center;
-    background-size: cover;
+.section{
     &-title{
-        .mazzbold();
-        font-size: 2.8rem;
-        margin-bottom: 4rem;
-        color:@text;
+        text-align: center;
+        .inter();
+        font-weight: 500;
+        color: @text;
+        font-size: 2.4rem;
+        margin-bottom: 3rem;
     }
     &-paragraph{
-        .mazzreg();
-        font-size: 1.8rem;
-        margin-bottom: 3.5rem;
-        color: @text;
+        text-align: center;
+        padding: 0;
+        margin-bottom: 6rem;
+        .inter();
+        color: @gray;
+        font-size: 1.6rem;
+        font-weight: 400;
     }
-    &-block{
-        display: flex;
-        align-items: center;
-        padding: 1.9rem 4rem;
-        border-radius: 1rem;
-        box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.07);
-        margin-bottom: 2rem;
-        &-form{
-            text-align: center;
-            padding-top: 3rem;
-            &-title{
-                .mazzbold();
-                font-size: 2rem;
-                color: @dop;
-                margin-bottom: 4rem;
-            }
-            &-name{
-                .mazzreg();
-                font-size: 1.4rem;
-                color: @dop;
-                padding: 0;
-                margin-bottom: 0.6rem;
-                text-align: left;
-            }
-            &-input{
-                width: 100%;
-                padding: 1.4rem 1.3rem;
-                border-radius: 0.5rem;
-                background-color: #FEFEFE;
-                color: @text;
-                font-size: 1.4rem;
-                margin-bottom: 2rem;
-                border: none;
-                border: 1px solid #FEFEFE;
-                transition: 0.3s;
-                &:hover{
-                    border: 1px solid @dop;
-                }
-                &:focus{
-                    border: 1px solid @dop;
-                }
-            }
-            &-span{
-                margin: 0;
-            }
-            &-button{
-                padding: 1.6rem 6rem;
-                font-size: 1.8rem;
-                margin-bottom: 1.3rem;
-            }
+}
+
+//first-section
+.first-section{
+    background: url(../img/first-block/bg.svg) no-repeat center center;
+    background-size: cover;
+    padding: 30rem 0rem;
+    &-title{
+        font-size: 6rem;
+        .inter();
+        font-weight: bold;
+        color: @text;
+        margin-bottom: 3rem;
+        span{
+            color: @osnova;
+        }
+    }
+    &-paragraph{
+        padding: 0;
+        .inter();
+        color: @gray;
+        font-weight: 400;
+        font-size: 1.6rem;
+        margin-bottom: 4rem;
+        span{
+            font-weight: 600;
+            color: @osnova;
         }
     }
     &-img{
-        margin-right: 4rem;
+        display: none;
     }
-    &-name{
-        .mazzmed();
-        font-size: 1.8rem;
-        color: @text;
-        margin-bottom: 1rem;
-    }
-    &-sename{
-        .mazzlight();
-        font-size: 1.2rem;
-        line-height: 1.4rem;
-        color: @text;
-        padding: 0;
-        margin: 0;
-    }
-    &-form{
-        padding: 4rem 3rem;
-        border-radius: 1rem;
-        background: url(../img/plans/form-bg.png) no-repeat center;
-        background-size: cover;
-    }
+
 }
-option{
-    &:focus{
-        border: 1px solid @dop;
+.whatisit{
+    padding: 3rem 0rem;
+    background-color: #FDFDFE;
+    &-block{
+        padding: 7rem 9rem;
+        background-color: @bg_gray;
+        border-radius: 3rem;
+        color: @light;
     }
-}
-//rewiews
-.rewiews{
-    padding: 10rem 0rem 6rem 0rem;
-    background-color: #fefefe;
     &-title{
-        padding: 0;
-        margin-bottom: 4rem;
+        .inter();
+        font-weight: 600;
+        font-size: 2.4rem;
+        margin-bottom: 6rem;
+    }
+    &-paragraph{
+        .inter();
+        font-weight: 400;
+        font-size: 1.6rem;
+        margin-bottom: 0;
+
+    }
+    &-img{
+        width: 60%;
+        &-block{
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+.calculator{
+    padding: 4rem 0rem;
+    background-color: #FDFDFE;
+}
+.whyworks{
+    padding: 7rem 0rem;
+    background: url(../img/whyworks/bg.svg) no-repeat center center;
+    background-size: cover;
+    &-title{
+        margin-bottom: 6rem;
     }
     &-block{
-        padding: 5rem 3rem;
-        border-radius:1rem;
-        background: #ffffff;
+        
+       padding: 3rem 2rem;
+        border-radius: 2rem;
+        background-color: @light;
         box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.05);
-        filter: drop-shadow(0px 0px 16px rgba(0, 0, 0, 0.05));
+    }
+    &-img{
+        width: 100%;
+        margin-bottom: 2.4rem;
     }
     &-name{
-        .opensans();
+        .inter();
+        color: @text;
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin-bottom: 0.7rem;
+    }
+    &-blocking{
+        width: 30%;
+        height: 0.2rem;
+        background-color: @osnova;
+        margin-bottom: 3rem;
+    }
+    &-paragraph{
+        font-size: 1.3rem;
+        .inter();
         font-weight: 600;
         color: @text;
-        margin-bottom: 4rem;
+        padding: 0;
+    }
+    &-li{
+        span{
+            .inter();
+            font-weight: 600;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: @text;
+        }
+    }
+    &-ul{
+        padding-top: 1rem;
+        color: #008D3E;
+        font-size: 1.4rem;
+
+    }
+    &-button{
+        &-block{
+            padding-top: 4rem;
+            text-align: center;
+        }
+    }
+}
+.pluses{
+    padding: 7rem 0rem;
+    background: url(../img/pluses/bg.svg) no-repeat center;
+    background-size: cover;
+    &-block{
+        padding: 5rem;
+        border-radius: 2rem;
+        background-color: @light;
+        box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.05);
+        text-align: center;
+
+    }
+    &-name{
+        padding: 0;
+        .inter();
+        color: @text;
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+    }
+    &-blocking{
+        margin-left: 32.5%;
+        width: 35%;
+        height: 0.2rem;
+        background-color: #6EE06C;
+        margin-bottom: 2rem;
     }
     &-paragraph{
-        .opensans();
-        font-weight: 400;
-        font-size: 1.4rem;
-        line-height: 1.9rem;
+        text-align: left;
         color: @text;
+        .inter();
+        font-weight: 500;
+        font-size: 1.3rem;
         padding: 0;
         margin: 0;
     }
-    &-sename{
-        text-align: center;
-        .mazzlight();
-        font-size: 1rem;
-        color: @text;
-        padding-top: 1.5rem;
-        margin-bottom: 0;
+    &-img{
+        margin-bottom: 3rem;
     }
 }
-.swiper{
-    &-wrapper{
-        padding: 2rem 0rem;
+.companys{
+    background-color: #FDFDFE;
+    padding: 8rem 0rem;
+    &-img{
+        width: 100%;
+        margin-bottom: 2rem;
     }
-    &-pagination{
+    &-block{
+        &-one{
+            text-align: center;
+        }
+        &-two{
+            text-align: center;
+            display: none;
+        }
+    }
+    &-two{
         display: none;
     }
 }
-//Contacts
-.contacts{
-    background-color: #FEFEFE;
-    padding: 7rem 0rem;
-    &-block{
-        padding-top: 9rem;
-        &-two{
-            padding-left: 3rem;
-        }
-    }
-    &-link{
-        display: flex;
-        align-items: center;
-        margin-bottom: 3rem;
-        text-decoration: none;
-        transition: 0.3s;
-        color: @text;
-        &:hover{
-            text-decoration: underline;
-            color: @text;
-        }
-    }
-    &-img{
-        margin-right: 2.5rem;
-        width: 5rem;
-    }
-    &-name{
-        .mazzlight();
-        font-size: 1.8rem;
-        color: @text;
-        margin: 0;
-    }
-    &-bg{
-        text-align: center;
-        width: 100%;
-        padding-top: 2rem;
-    }
-}
-//Diskond
-.diskond{
-    padding: 7rem 0rem;
-    background: url(../img/diskond/bg.png) no-repeat center;
-    background-size: cover;
-    &-title{
-        padding: 0;
-        margin: 0;
-        text-align: center;
-        color: @light;
-        .mazzbold();
-        font-size: 2.8rem;
-    }
-}
-.whyworks{
-    padding: 4rem 0rem;
-    &-title{
-        margin-bottom: 8rem;
-    }
-    &-img{
-        width: 100%;
-        margin-bottom: 3rem;
-        &-two{
-            display: none;
-            width: 100%;
-            margin-bottom: 2rem;
-        }
-    }
-    &-button{
-        padding: 1.6rem 5rem;
-        font-size: 1.8rem;
-        &-block{
-            text-align: center;
-        }
-    }
-}
-.marks{
-    padding: 10rem 0rem;
-    &-title{
-        margin-bottom: 7rem;
-    }
-    &-img{
-        width: 100%;
-        &-two{
-            display: none;
-            width: 100%;
-        }
-    }
-}
-.service{
-    padding: 4rem 0rem;
-    background: url(../img/diskond/bg.png) no-repeat center;
-    background-size: cover;
-    &-title{
-        margin-bottom: 2.5rem;
-    }
-    &-paragraph{
-        .mazzreg();
-        font-size: 2rem;
-        line-height: 2.4rem;
-        text-align: center;
-        color: @light
-    }
-}
-.remont_out{
-    padding-bottom: 8rem;
-    &-title{
-        margin-bottom: 5rem;
-    }
-    &-block{
-        width: 100%;
-        text-align: center;
-        background-color: @dop;
-        padding: 3rem 0rem;
-        border-radius: 1rem;
-    }
-    &-img{
-        width: 5rem;
-        margin-bottom: 1.5rem;
-    }
-    &-name{
-        padding: 0;
-        margin: 0;
-        .mazzmed();
-        color: @light;
-        font-size: 2rem;
-    }
-}
-
-tr{
-    margin-bottom: 2rem;
-}
-//Cost
-.cost{
+.kof{
     padding: 8rem 0rem;
+    background-color: #FDFDFE;
     &-title{
-        margin-bottom: 5rem;
-    }
-    &-block{
-        padding: 5rem 21rem;
-        background-color: #D9DFFC;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 2rem;
-    }
-    &-blocking{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 2.5rem;
-        &-first{
-            margin-bottom: 4rem;
-        }
-    }
-    &-name{
-        .mazzbold();
-        font-size: 2.2rem;
-        color: @osnova;
-        margin-bottom: 2rem;
-
-    }
-    &-label{
-        font-size: 1.8rem;
-        .mazzreg();
+        .inter();
+        font-weight: 600;
         color: @text;
-        width: 35rem;
-        cursor: pointer;
-        &:checked{
-            color: @osnova;
-        }
-    }
-    &-input[type="checkbox"]{
-        width: 2rem;
-        border: 0.5rem solid @osnova;
-        border-radius: 100%; 
-        cursor: pointer;
-        background-color: @osnova;
-
-        
-    }
-    &-block-button{
-        padding-top: 5rem;
-        text-align: center;
-    }
-    &-button{
-        padding: 1.6rem 6rem;
-        background-color: @osnova;
-        font-size: 1.8rem;
-        &:hover{
-            background-color: @dop;
-        }
-    }
-}
-
-
-//Footer
-.footer{
-    &-st{
-        background-color: @osnova;
-    }
-    &-first{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0.8rem 0rem;
-    }
-    &-linked{
-        display: flex;
-        align-items: center;
-        &-first{
-            display: none;
-        }
-    }
-    &-link{
-        display: flex;
-        align-items: center;
-        margin-right: 1.7rem;
-        color:@light;
-        transition: 0.3s;
-        &:hover{
-            text-decoration: underline;
-        }
-        &-two{
-            margin-right: 3rem;
-        }
-    }
-    &-img{
-        width: 3rem;
+        font-size: 2.4rem;
+        margin-bottom: 6rem;
     }
     &-paragraph{
-        margin: 0;
-        padding-left: 1.4rem;
+        padding: 0;
+        .inter();
+        color: @gray;
+        font-weight: 400;
+        margin-bottom: 3rem;
+        font-size: 1.6rem;
+    }
+    &-sename{
+        color: #6EE06C;
+        .inter();
+        font-weight: 600;
+        font-size: 2.8rem;
+        margin-bottom: 3rem;
+    }
+    &-block{
+
+    }
+    &-img{
+        width: 100%;
+    }
+}
+.footer{
+    &-one{
+        background-color: #444053;
+    }
+    &__list{
         color: @light;
-        .mazzreg();
-        font-size: 1.4rem;
         &:hover{
             text-decoration: underline;
+            color: @light;
+        }
+        li{
+            color: @light;
         }
     }
-    &-logo{
-        width: 6rem;
-    }
-    &-twice{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        &-paragraph{
-            margin: 0;
+    &-two{
+        background-color: #373444;
+        padding: 1rem;
+        &-block{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &-link{
             padding: 0;
-            color: #DEDEDE;
-            .opensans();
-            font-weight: 400;
+            margin: 0;
+            color: @light;
             font-size: 1.4rem;
+            .inter();
+            font-weight: 500;
             text-decoration: none;
-            &-two{
-                color: #DEDEDE;
-                &:hover{
-                    text-decoration: underline;
-                    color: #DEDEDE;
-                }
+            &:hover{
+                text-decoration: none;
+                color: @light;
             }
         }
     }
-    &-es{
-        background-color: #351EC0;
-        padding: 0.8rem 0rem;
-    }
 }
-//Problems
-.problems{
-    padding: 10rem 0rem;
-    &-block{
-        padding: 2rem 3rem;
-        border-radius: 1rem;
-        background-color: @block_gray;
-        margin-bottom: 2.5rem;
-        &-two{
-            padding-top: 20%;
-            padding-left: 5%;
-        }
-
-    }
-    &-bloking{
-        display: flex;
-        align-items: center;
-        margin-bottom: 3rem;
-    }
-    &-img{
-        width: 4rem;
-        margin-right: 2rem;
-        &-two{
-            margin-bottom: 3rem;
-        }
-    }
-    &-name{
-        .mazzbold();
-        color: @osnova;
-        font-size: 2rem;
-    }
-    &-paragraph{
-        .mazzreg();
-        color: @osnova;
-        font-size: 1.6rem;
-        line-height: 169.7%;
-        &-two{
-            line-height: 142.2%;
-        }
-    }
-    &-button{
-        margin-top: 3rem;
-        width: 100%;
-        padding: 1.8rem 7rem;
-        background-color: @osnova;
-        cursor: pointer;
-        color: @light;
-        .mazzbold();
-        font-size: 1.4rem;
-        &:hover{
-            background-color: @dop;
-        }
-    }
-    &-sename{
-        .mazzreg();
-        color: @text;
-        font-size: 1.7rem;
-        line-height: 2rem;
-        margin: 0;
-    }
-}
-//Popup
 .none{
     display: none;
 }
-.popup, .modal {
-    display: none;
-    position: fixed;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 9;
-    background: rgba(0, 0, 0, 0.8);
-  }
-  .popup-title{
-    color:@dop;
-    .mazzbold();
-    font-size: 2.4rem;
-    padding-bottom: 1rem;
-    text-align: center;
-    margin-bottom: 4rem;
-  }
-  .modal-title{
-    color:@dop;
-    .mazzbold();
-    font-size: 2.4rem;
-    padding-bottom: 1rem;
-    text-align: center;
-    margin-bottom: 4rem;
-  }
-  .modal-content{
-    position: fixed;
-    left: 50%;
-    top: 15%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    padding: 5rem 3rem;
-    background: url(../img/popup/bg.png) no-repeat center;
-    background-size: cover;
-    width: 30%;
-    border-radius: 1rem;
-  }
-  .popup-content {
-    position: fixed;
-    left: 50%;
-    top: 15%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    padding: 5rem 3rem;
-    background: url(../img/popup/bg.png) no-repeat center;
-    background-size: cover;
-    width: 30%;
-    border-radius: 1rem;
-   
-  }
-  .modal-form{
-    position: relative;
-  }
-  .popup-form {
-    position: relative;
-
-  }
-
-  .popup-close {
-    top: 1rem;
-    position: absolute;
-    right: 1rem;
-    width: 4rem;
-    border: none;
-    background-color: transparent;
-    font-size: 3rem;
-    font-weight: 400;
-    color: @dop;
-    cursor:pointer;
-    &:hover{
-        color: #000;
-    }
-  }
-  .modal-close{
-    top: 1rem;
-    position: absolute;
-    right: 1rem;
-    width: 4rem;
-    border: none;
-    background-color: transparent;
-    font-size: 3rem;
-    font-weight: 400;
-    color: @dop;
-    cursor:pointer;
-    &:hover{
-        color: #000;
-    }
-  }
-  .modal-header-text{
-      font-size: 1.3rem;
-  }
-  .popup-header-text {
-    font-size: 1.3rem;
-  }
-  .modal-name{
-    font-size: 1.4rem;
-    color: @light;
-    .mazzreg();
-    color: @dop;
-  }
-  .popup-name{
-      font-size: 1.4rem;
-      color: @light;
-      .mazzreg();
-      color: @dop;
-  }
-  .popup-block{
-      text-align: center;
-  }
-  .modal-block{
-    text-align: center;
-  }
-  .popup-img{
-      width: 3%;
-  }
-  .modal-paragraph{
-    .opensans();
-    font-weight: 400;
-    font-size: 1.2rem;
-    color:#959595;
-    margin: 0;
-    padding: 0;
-  }
-  .popup-paragraph{
-      .opensans();
-      font-weight: 400;
-      font-size: 1.2rem;
-      color:#959595;
-      margin: 0;
-      padding: 0;
-  }
-  .modal-button{
-    margin-bottom: 2rem;
-    margin-top: 4rem;
-    padding: 1.5rem 6rem;
-    border: none;
-    .opensans();
-    font-weight: 600;
-    color: @light;
-    font-size: 1.6rem;
-    background-color: @dop;
-    &:hover{
-        background-color: @osnova;
-    }
-  }
-  .popup-button{
-      margin-bottom: 2rem;
-      margin-top: 4rem;
-      padding: 1.5rem 6rem;
-      border: none;
-      .opensans();
-      font-weight: 600;
-      color: @light;
-      font-size: 1.6rem;
-      background-color: @dop;
-      &:hover{
-          background-color: @osnova;
-      }
-  }
-  .form{
-      &-input{
-          width: 100%;
-          border:none;
-          background:#FEFEFE;
-          margin-bottom: 2rem;
-          padding: 1rem;
-          font-size: 1.5rem;
-          .mazzreg();
-          color: #000;
-      }
-  }
-//Media
-@media(max-width: 1200px){
-    .cost{
-        &-label{
-            width: 28rem;
-            padding-left: 1rem;
+.block{
+    display: block;
+}
+@media(max-width: 1400px){
+    .whatisit{
+        padding: 0rem 0rem;
+        &-title{
+            margin-bottom: 3rem;
+        }
+        &-paragraph{
+            font-size: 1.4rem;
         }
     }
-    //Header
-    .header__block{
-        display: block;
-        padding-top: 8rem;
+    .whyworks{
+        padding: 5rem 0rem;
     }
+}
+
+@media(max-width: 1200px){
     .header-link{
         display: flex;
         align-items: start;
-        .opensans();
-        font-weight: 400;
+        .inter();
+        font-weight: 600;
         font-size: 2rem;
-        color: #DADADA;
-        &-img{
-            margin-right: 2rem;
-            &-two{
-                display: none;
-            }
-        }
+        color: @text; 
         &:hover{
-            color: #DADADA;
+            color: @text;
             text-decoration: underline;
         }
     }
@@ -1109,7 +530,7 @@ tr{
 		display: block;
 	}
 	.header__list li{
-		margin: 0px 0px 0.7rem 0px;
+		margin: 0px 0px 1rem 0px;
 	}
 	body.lock{
 		overflow: hidden;
@@ -1118,455 +539,139 @@ tr{
 		font-size: 2rem;
 		opacity: 1;
     }
-    .header__button{
-        display: none;
-    }
-    .washer{
-        &-first_window{
-            padding-top: 12rem;
-            padding-bottom: 18rem;
-        }
-    }
-    .dishwasher{
-        &-first_window{
-            padding-top: 12rem;
-            padding-bottom: 18rem;
-        }
-    }
-    .dryer{
-        &-first_window{
-            padding-top: 12rem;
-            padding-bottom: 18rem;
-        }
-    }
-    .ice{
-        &-first_window{
-            padding-top: 12rem;
-            padding-bottom: 18rem;
-        }
-    }
 
-    .home{
-        &-first_window{
-            padding-top: 12rem;
-            padding-bottom: 8rem;
-            &-span{
-                padding-top: 7rem;
-                font-size: 1.4rem;
-            }
-            &-title{
-                padding-top: 2rem;
-                font-size: 2.8rem;
-                margin-bottom: 3rem;
-            }
-            &-paragraph{
-                font-size: 1.2rem;
-                margin-bottom: 3rem;
-            }
-            &-button{
-                font-size: 1.1rem;
-                padding: 0.8rem 3rem;
-                border-radius: 0.8rem;
-            }
-        }
-        &-services{
-            &-img{
-                &_white{
-                    padding-left: 30%;
-                }
-            }
-        }
-    }
-    .pluses{
-        &-name{
-            font-size: 1.2rem;
-            line-height: 1.5rem;
-        }
-    }
-    .contacts{
-        &-img{
-            width: 3rem;
-            margin-right: 1rem;
-        }
-        &-name{
-            font-size: 1.4rem;
-        }
-        &-link{
-            margin-bottom: 1.5rem;
-        }
-        &-bg{
-            width: 80%;
-        }
-    }
-    .popup{
-        &-content{
-            top: 10%;
-            width: 60%;
-            padding: 3rem 3rem;
-        }
+    .first-section{
+        padding: 15rem 0rem;
         &-title{
-            padding-bottom: 2rem;
+            font-size: 3.6rem;
         }
-        &-block{
-            margin-bottom: 1rem;
-        }
-        &-close{
-            top: 0;
-            right: 0;
-        }
-    }
-    .modal{
-        &-content{
-            top: 10%;
-            width: 60%;
-            padding: 3rem 3rem;
-        }
-        &-title{
-            padding-bottom: 2rem;
-        }
-        &-block{
-            margin-bottom: 1rem;
-        }
-        &-close{
-            top: 0;
-            right: 0;
-        } 
-    }
-    .form{
-        &-input{
-            margin-bottom: 1rem;
-            padding: 0.5rem;
-        }
-    }
-    .problems{
         &-paragraph{
-            font-size: 1.2rem;
-        }
-        &-button{
-            padding: 1.8rem 3rem;
-        }
-        &-name{
-            font-size: 1.8rem;
+            font-size: 1.5rem; 
         }
     }
 }
 @media(max-width: 800px){
-    .cost{
+    .whatisit{
         &-block{
-            padding: 2rem 3rem;
+            padding: 4rem 3rem;
+        }
+        &-title{
+            font-size: 1.6rem;
+        }
+        &-paragraph{
+            font-size: 1.2rem;
+            line-height: 136.52%;
+        }
+        &-img{
+            padding-top: 2rem;
         }
     }
-    .service-paragraph{
-        font-size: 1.4rem;
-        line-height: 1.6rem;
-    }
-    .home{
-        &-first_window{
-            &-button{
-                font-size: 1.8rem;
-            }
+    .whyworks{
+        padding: 3rem 0rem;
+        &-block{
+            padding: 2rem 1rem;
         }
-        &-services{
-            padding: 5rem 0rem;
-            &-title{
-                margin-bottom: 3.6rem;
-            }
-            &-block{
-                padding: 1.5rem 3rem;
-                min-height: 12.9rem;
-            }
-            &-name{
-                font-size: 1.4rem;
-                line-height: 1.5rem;
-                margin-bottom: 0;
-            }
-            &-img{
-                margin-bottom: 1rem;
-                &_white{
-                    margin-bottom: 1rem;
-                    padding-left: 25%; 
-                }
-            }
+        &-name{
+            font-size: 1.1rem;
         }
-        &-comfort{
-            padding: 6rem 0rem;
-            &-title{
-                padding-top: 3rem;
-                font-size: 2.4rem;
-                margin-bottom: 4rem;
-            }
-            &-paragraph{
-                font-size: 1.3rem;
-                line-height: 1.5rem;
-                margin-bottom: 1.5rem;
+        &-blocking{
+            margin-bottom: 1.3rem;
+        }
+        &-paragraph{
+            font-size: 1rem;
+            margin-bottom: 0rem;
+        }
+        &-ul{
+            padding-top: 0.5rem;
+            font-size: 1.1rem;
+        }
+        &-li{
+            span{
+                font-size: 1rem;
             }
         }
     }
     .pluses{
-        &-img{
-            width: 3.5rem;
-            margin-right: 1rem;
-        }
-        &-name{
-            font-size: 1.2rem;
-            line-height: 1.3rem;
-        }
-        &-block{
-            padding: 0.5rem;
-            min-height: 6rem;
-        }
-    }
-    .plans{
-        padding: 3.5rem 3rem;
-        &-title{
-            font-size: 2.2rem;
-            margin-bottom: 2rem;
-        }
-        &-paragraph{
-            font-size: 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-        &-block{
-            padding: 1rem 2rem;
-            margin-bottom: 1rem;
-            &-form{
-                padding-top: 1.8rem;
-                &-title{
-                    font-size: 1.5rem;
-                    margin-bottom: 1.3rem;
-                }
-                &-name{
-                    font-size: 1.4rem;
-                    margin-bottom: 0.3rem;
-                }
-                &-input{
-                    padding: 0.5rem 0.4rem;
-                    border-radius: 0.5rem;
-                    font-size: 1.2rem;
-                    margin-bottom: 1rem;
-                }
-                &-button{
-                    padding: 0.9rem 3rem;
-                    font-size: 1.3rem;
-                    border-radius: 0.5rem;
-                    margin-bottom: 0.7rem;
-                }
-                &-span{
-                    font-size: 0.9rem;
-                    line-height: 1.1rem;
-                }
-            }
-        }
-        &-img{
-            margin-right: 2rem;
-            width: 4.5rem;
-        }
-        &-name{
-            font-size: 1.5rem;
-            margin-bottom: 0.6rem;
-        }
-        &-sename{
-            font-size: 1.2rem;
-            line-height: 1.3rem;
-        }
-        &-form{
-            padding: 2.5rem 1.7rem;
-        }
-    }
-    .rewiews{
-        &-block{
-            margin-bottom: 2rem;
-        }
-        &-sename{
-            font-size: 1.3rem;
-        }
-    }
-    .swiper{
-        &-pagination{
-            display: block;
-        }
-        &-button{
-            &-prev{
-                display: none;
-            }
-            &-next{
-                display: none;
-            }
-        }
-    }
-    .contacts{
         padding: 4rem 0rem;
-        &-name{
-            font-size: 1rem;
-        }
-        &-bg{
-            padding-top: 4rem;
-        }
-    }
-          //Popup
-          .popup{
-            &-content{
-                width: 60%;
-            }
-        }
-        .modal{
-            &-content{
-                width: 60%;
-            }
-        }
-        .problems{
-            &-block{
-                padding: 1rem 1.2rem;
-                &-two{
-                    padding-top: 5%;
-                }
-            }
-            &-img{
-                width: 3rem;
-                margin-right: 1rem;
-                &-two{
-                    width: 3rem;
-                    margin-bottom: 1rem;
-                }
-            }
-            &-name{
-                font-size: 1.4rem;
-            }
-            &-bloking{
-                margin-bottom: 1.4rem;
-            }
-            &-paragraph{
-                font-size: 1rem;
-            }
-            &-button{
-                margin-top: 1rem;
-                padding: 1rem 0rem;
-                font-size: 1rem;
-            }
-            &-sename{
-                font-size: 1.4rem;
-                line-height: 1.6rem;
-            }
-        }
-        .diskond{
-            padding: 4rem 0rem;
-            &-title{
-                font-size: 1.8rem;
-            }
-        }
-        .marks{
-            padding: 5rem 0rem;
-           
-        }
-}
-@media(max-width: 450px){
-    .cost{
         &-block{
-            padding: 1rem 1rem;
-
+            padding: 3rem;
         }
         &-name{
-            font-size: 1.4rem;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
         }
-        &-label{
-            font-size: 1.2rem;
-            width: 15rem;
-
+        &-blocking{
+            margin-bottom: 1.3rem;
         }
-    }
-    .remont_out{
-        padding-bottom: 2rem;
-        &-block{
-            padding: 1.5rem 0rem;
+        &-paragraph{
+           font-size: 1rem; 
+        }
+        &-img{
             margin-bottom: 2rem;
         }
     }
-    .section{
+    .companys{
+        padding: 4rem 0rem;
+        &-img{
+            margin-bottom: 1rem;
+        }
+    }
+    .kof{
+        padding: 4rem 0rem;
+        &-block{
+            padding-top: 20%;
+        }
         &-title{
-            font-size: 2.2rem;
+            font-size: 1.6rem;
+            margin-bottom: 4.8rem;
         }
         &-paragraph{
-            font-size: 1.1rem;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        &-sename{
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+@media(max-width: 450px){
+    .first-section{
+        text-align: center;
+        background: url(../img/first-block/bg_mobile.svg) no-repeat center center;
+        background-size: cover;
+        &-img{
+            display: block;
+            text-align: center;
+            &_block{
+                text-align: center;
+                padding-left: 10%;
+              
+            }
+        }
+        &-paragraph{
+            margin-bottom: 0;
+        }
+    }
+    .whatisit{
+        &-block{
+            padding: 5rem 3rem;
+        }
+        &-title{
+            margin-bottom: 3rem;
+        }
+        &-paragraph{
             margin-bottom: 4rem;
         }
-    }
-    .washer{
-        &-first_window{
-            background: url(../img/washer/first-window/bg_mobile.png) no-repeat left bottom;
-            background-size: cover;
-            padding-bottom: 13rem;
+        &-img{
+            padding-top: 0rem;
         }
     }
-    .dishwasher{
-        &-first_window{
-            background: url(../img/dishwasher/bg_mobile.png) no-repeat left bottom;
-            background-size: cover;
-            padding-bottom: 13rem;
-        }
-    }
-    .dryer{
-        &-first_window{
-            background: url(../img/dryer/bg_mobile.png) no-repeat left bottom;
-            background-size: cover;
-            padding-bottom: 13rem;
-        }
-    }
-    .ice{
-        &-first_window{
-            background: url(../img/ice/bg_mobile.png) no-repeat left bottom;
-            background-size: cover;
-            padding-bottom: 13rem;
-        }
-    }
-    .home{
-        &-first_window{
-            padding-bottom: 13rem;
-            background: url(../img/home/first_window/bg_mobile.png) no-repeat right bottom;
-            background-size: cover;
-            &-span{
-                font-size: 1.8rem;
-                padding-top: 4rem;
-            }
-            &-title{
-                padding-top: 3.4rem;
-                font-size: 2.5rem;
-                margin-bottom: 2.5rem;
-            }
-            &-paragraph{
-                margin-bottom: 4rem;
-                font-size: 1.5rem;
-            }
-            &-button{
-                font-size: 1.8rem;
-                padding: 0.9rem 4rem;
-                border-radius: 0.5rem;
-            }
-        }
-        &-services{
-            padding: 4rem 0rem;
-            &-block{
-                margin-bottom: 1rem;
-                min-height: 0rem;
-                padding: 1rem 2rem;
-            }
-            &-img{
-                &_white{
-                    padding-left: 43%;
-                }
-            }
-            &-name{
-                font-size: 1.8rem;
-            }
-        }
-        &-comfort{
-            padding: 0rem 0rem;
-            &-img{
-                padding: 2rem 0rem;
-            }
-            &-paragraph{
-                font-size: 1.5rem;
-                line-height: 1.7rem;
-            }
+    .whyworks{
+        padding: 0rem 0rem;
+        &-block{
+            margin-bottom: 2rem;
         }
     }
     .pluses{
@@ -1574,215 +679,54 @@ tr{
             margin-bottom: 2rem;
         }
     }
-    .rewiews{
-        padding: 3rem 2rem;
+    .kof{
         &-title{
-            margin-bottom: 3rem;
-        }
-        &-block{
-            padding: 3rem 1rem;
-        }
-        &-name{
-            margin-bottom: 2rem;
+            text-align: center;
         }
     }
-    .contacts{
-        padding: 2rem 0rem;
-        &-block{
-            padding-top: 3rem;
-            &-two{
-                padding-left: 0;
-                padding-top: 2rem;
-            }
-        }
-        &-bg{
-            padding-left: 10%;
-            padding-top: 1rem;
-        }
-        &-name{
-            font-size: 1.4rem;
-        }
-    }
-    .footer{
-        &-linked{
-            display: none;
-            &-first{
-                display: block;
-            }
-            &-twice{
-                display: flex;
-                align-items: center;
-                padding-left: 20%;
-            }
-        }
-        &-link{
-            margin-bottom: 1rem;
-            &-two{
-                margin-right: 0;
-            }
-        }
-        &-logo{
-            width: 10rem;
-        }
-    }
-    //Popup
-    .popup{
-        &-content{
-            width: 90%;
-            padding: 1rem 2.5rem
-        }
-        &-title{
-            
-            margin-bottom: 3rem;
-        }
-        &-name{
-            font-size: 1.4rem;
-        }
-        &-paragraph{
-            font-size: 1.1rem;
-        }
-        &-button{
-            padding: 1.2rem 6rem;
-            font-size: 1.4rem;
-        }
-    }
-    .modal{
-        &-content{
-            width: 90%;
-            padding: 1rem 2.5rem
-        }
-        &-title{
-            
-            margin-bottom: 3rem;
-        }
-        &-name{
-            font-size: 1.4rem;
-        }
-        &-paragraph{
-            font-size: 1.1rem;
-        }
-        &-button{
-            padding: 1.2rem 6rem;
-            font-size: 1.4rem;
-        }
-    }
-    .form{
-        &-input{
-            width: 100%;
-            padding: 1rem;
-        }
-    }
-    .problems{
-        padding: 4rem 0rem;
-        &-block{
-            padding: 1rem 0.5rem;
-        }
-        &-paragraph{
-            font-size: 1rem;
-            min-height: 15rem;
-            &-two{
-                line-height: 169.7%;
-            }
-        }
-        &-name{
-            font-size: 1.2rem;
-        }
+}
+
+@media(max-width: 400px){
+    .first-section{
+        padding: 8rem 0rem;
         &-img{
-            &-two{
-                text-align: center;
+            &-block{
+                padding-left: 5%;
             }
         }
     }
     .whyworks{
-        &-img{
-            display: none;
-            &-two{
-                display: block;
-            }
+        &-li{
+            font-size: 0.8rem;
         }
-    }
-    .marks{
-        &-img{
-            display: none;
-            &-two{
-                display: block;
-            }
-        }
-        &-title{
-            margin-bottom: 3rem;
-        }
-    }
 
+    }
 }
-@media(max-width: 400px){
-    .home{
-        &-first_window{
-            &-span{
-                font-size: 1.4rem;
-                padding-top: 2rem;
-            }
-            &-title{
-                padding-top: 2.2rem;
-                font-size: 2.2rem;
-                margin-bottom: 1.5rem;
-            }
-            &-paragraph{
-                font-size: 1.2rem;
-                margin-bottom: 3rem;
-            }
-        }
-        &-services{
-            &-block{
-                min-height: 10.2rem;
-            }
-        }
 
-    }
-    .pluses{
+@media(max-width: 350px){
+    .first-section{
+        padding: 10rem 0rem;
         &-img{
-            width: 3rem;
+            width: 100%;
+            &-block{
+                padding-left: 0rem;
+            }
         }
-        &-name{
-
-        }
-    }
-    .plans{
         &-title{
-            font-size: 2rem;
+            font-size: 3rem;
         }
         &-paragraph{
-            font-size: 1.3rem;
-        }
-        &-name{
-            font-size: 1.6rem;
-        }
-        &-sename{
-            font-size: 1.4rem;
-            line-height: 1.5rem;
-        }
-        &-block{
-            padding: 1rem 0.5rem;
-            &-form{
-                &-title{
-                    font-size: 1.7rem;
-                    margin-bottom: 3rem;
-                }
-                &-name{
-                    font-size: 1.5rem;
-                }
-                &-input{
-                    padding: 0.8rem 0.7rem;
-                    font-size: 1.4rem;
-                    margin-bottom: 2rem;
-                }
-                &-button{
-                    font-size: 1.5rem;
-                }
-            }
-        }
-        &-img{
-            margin-right: 1rem;
+            font-size: 1.2rem;
         }
     }
-
+    .whatisit{
+        &-block{
+            padding: 3rem 1rem;
+        }
+    }
+    .pluses{
+        &-block{
+            padding: 1rem 1rem;
+        }
+    }
 }
